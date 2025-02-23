@@ -19,3 +19,13 @@ module.exports = {
       ],
     },
   };
+
+  /** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  basePath: "/template-H", // Change this to match your repo name
+  assetPrefix: "/template-H", // Ensure static assets are served correctly
+  images: {
+    unoptimized: true, // Disable Next.js Image Optimization for GitHub Pages
+  },
+};
