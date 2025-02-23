@@ -40,9 +40,9 @@ import {
 
 export default function Contact() {
   return (
-    <div className="relative isolate bg-white">
+    <div className="relative isolate bg-white text-secondary-onyx">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
-        <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
+        <div className="relative px-6 pb-5 sm:pb-20 pt-6 sm:pt-8 lg:py-20 lg:static lg:px-8">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
             <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-900/10 lg:w-1/2">
               <svg
@@ -73,7 +73,7 @@ export default function Contact() {
                 />
               </svg>
             </div>
-            <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+            <h2 className="text-pretty text-4xl font-semibold tracking-tight sm:text-5xl">
               Get in touch
             </h2>
             <div className="flex items-center gap-x-6 mt-6">
@@ -85,11 +85,11 @@ export default function Contact() {
                 className="size-16 rounded-full"
               />
               <div>
-                <h3 className="text-base/7 font-semibold tracking-tight text-gray-900">
+                <h3 className="text-base/7 font-semibold tracking-tight">
                   Adam Smith
                 </h3>
-                <p className="text-sm/6 font-semibold text-indigo-600">
-                  Student Advisor
+                <p className="text-sm/6 font-normal">
+                  Student Advisor <span className="text-secondary-darkCyan font-semibold">@Hoetzin</span>
                 </p>
               </div>
             </div>
@@ -98,13 +98,13 @@ export default function Contact() {
               molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
               Arcu sed malesuada et magna.
             </p> */}
-            <dl className="mt-10 space-y-4 text-base/7 text-gray-600">
-              <div className="flex gap-x-4">
+            <dl className="mt-8 sm:mt-6 space-y-4 text-base/7 text-secondary-onyx/70">
+              {/* <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Address</span>
                   <BuildingOffice2Icon
                     aria-hidden="true"
-                    className="h-7 w-6 text-gray-400"
+                    className="h-7 w-6 text-secondary-onyx/50"
                   />
                 </dt>
                 <dd>
@@ -112,19 +112,19 @@ export default function Contact() {
                   <br />
                   Chicago, IL 99191
                 </dd>
-              </div>
+              </div> */}
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Telephone</span>
                   <PhoneIcon
                     aria-hidden="true"
-                    className="h-7 w-6 text-gray-400"
+                    className="h-7 w-6 text-secondary-onyx/50"
                   />
                 </dt>
                 <dd>
                   <a
                     href="tel:+1 (555) 234-5678"
-                    className="hover:text-gray-900"
+                    className="hover:text-secondary-onyx/90"
                   >
                     +1 (555) 234-5678
                   </a>
@@ -135,13 +135,13 @@ export default function Contact() {
                   <span className="sr-only">Email</span>
                   <EnvelopeIcon
                     aria-hidden="true"
-                    className="h-7 w-6 text-gray-400"
+                    className="h-7 w-6 text-secondary-onyx/50"
                   />
                 </dt>
                 <dd>
                   <a
                     href="mailto:hello@hoetzin.com"
-                    className="hover:text-gray-900"
+                    className="hover:text-secondary-onyx/90"
                   >
                     hello@hoetzin.com
                   </a>
@@ -149,18 +149,37 @@ export default function Contact() {
               </div>
             </dl>
           </div>
+          
+          <div className="relative flex py-5 items-center">
+            <div className="flex-grow border-t border-secondary-onyx/50"></div>
+            <span className="flex-shrink mx-4 text-sm text-secondary-onyx/50">or</span>
+            <div className="flex-grow border-t border-secondary-onyx/50"></div>
+          </div>
+          <div className="pt-3 sm:pt-4 flex items-center justify-center">
+            {/* <h1>Book a 30-minutes meeting with </h1> 
+            <h2>Booking for 30-min meeting</h2> */}
+            <a
+            href="#"
+            className="text-center w-[calc(100%-6rem)] rounded-md bg-secondary-orangeCTA px-3 py-2 text-sm font-semibold text-white shadow hover:bg-secondary-orangeCTA/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-orangeCTA/60"
+            >
+            Book 30-minutes meeting
+            </a>
+
+          </div>
         </div>
-        <form
-          action="#"
-          method="POST"
-          className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
-        >
+        <div className="px-6 pb-24 pt-6 sm:pt-8 lg:py-20 sm:pb-32 lg:px-8">
+          
+          <form
+            action="#"
+            method="POST"
+          >
           <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+          <h1 className="font-semibold text-2xl mb-2">Send your inquiry here</h1>
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
                 <label
                   htmlFor="first-name"
-                  className="block text-sm/6 font-semibold text-gray-900"
+                  className="block text-sm/6 font-semibold"
                 >
                   First name
                 </label>
@@ -177,7 +196,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="last-name"
-                  className="block text-sm/6 font-semibold text-gray-900"
+                  className="block text-sm/6 font-semibold"
                 >
                   Last name
                 </label>
@@ -194,7 +213,7 @@ export default function Contact() {
               <div className="sm:col-span-2">
                 <label
                   htmlFor="email"
-                  className="block text-sm/6 font-semibold text-gray-900"
+                  className="block text-sm/6 font-semibold"
                 >
                   Email
                 </label>
@@ -211,7 +230,7 @@ export default function Contact() {
               <div className="sm:col-span-2">
                 <label
                   htmlFor="phone-number"
-                  className="block text-sm/6 font-semibold text-gray-900"
+                  className="block text-sm/6 font-semibold"
                 >
                   Phone number
                 </label>
@@ -228,7 +247,7 @@ export default function Contact() {
               <div className="sm:col-span-2">
                 <label
                   htmlFor="message"
-                  className="block text-sm/6 font-semibold text-gray-900"
+                  className="block text-sm/6 font-semibold"
                 >
                   Message
                 </label>
@@ -253,6 +272,8 @@ export default function Contact() {
             </div>
           </div>
         </form>
+        </div>
+
       </div>
     </div>
   );

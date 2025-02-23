@@ -106,9 +106,9 @@ export default function Curriculum() {
 
   return (
     <>
-      <div className="mx-auto max-w-4xl text-center">
+      <div className="mx-auto max-w-4xl text-center text-secondary-onyx">
         <h2 className="text-base/7 font-semibold text-secondary-lightGreen">curriculum updated with more AI</h2>
-        <h2 className="mt-2 text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">
+        <h2 className="mt-2 text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
           What You’ll Master in Our Web Development Bootcamp
         </h2>
           
@@ -117,7 +117,7 @@ export default function Curriculum() {
         Master cutting-edge web and AI techniques to transform ideas into impactful projects, cultivating the innovation and expertise needed to excel in today’s tech-driven world.
       </p>
         
-    <div className="bg-secondary-lightGreenBG/35 p-8 sm:flex">
+    <div className="bg-secondary-robinEggBlue/10 p-8 sm:flex">
       {/* Sidebar */}
       <div className="sm:w-1/4">
 <div className="sm:hidden overflow-x-auto">
@@ -195,7 +195,7 @@ export default function Curriculum() {
 
       {/* Content */}
       <div className="sm:w-3/4 sm:pl-6">
-        <h3 className="text-xl font-semibold text-gray-900">
+        <h3 className="text-xl font-semibold">
           {content[activeTab]?.title}
         </h3>
         <span className="mt-2 inline-block text-sm font-semibold text-orange-500">
@@ -203,13 +203,13 @@ export default function Curriculum() {
         </span>
         <p className="mt-4 text-sm text-gray-700">{content[activeTab]?.description}</p>
         <div className="mt-6 bg-white p-6 rounded-lg shadow">
-          <h4 className="text-sm font-medium text-gray-900">
+          <h4 className="text-sm font-medium">
             What you will build in practice:
           </h4>
-          <ul className="mt-4 space-y-3 text-sm text-gray-700">
+          <ul className="mt-4 space-y-3 text-sm text-secondary-onyx/85">
             {content[activeTab]?.practice.map((item, index) => (
               <li key={index} className="flex gap-x-3 items-start">
-                <svg className="h-6 w-6 flex-none fill-sky-100 stroke-secondary-lightGreen stroke-2" strokeLinecap="round" strokeLinejoin="round">
+                <svg className="h-6 w-6 flex-none fill-white stroke-secondary-robinEggBlue stroke-2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="12" r="11" />
                   <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
                 </svg>
@@ -217,14 +217,14 @@ export default function Curriculum() {
               </li>
             ))}
           </ul>
-          <h4 className="mt-6 text-sm font-medium text-gray-900">
+          <h4 className="mt-6 text-sm font-medium">
             Software and languages you will learn:
           </h4>
           <div className="mt-4 flex space-x-2">
             {content[activeTab]?.tools.map((tool, index) => (
               <div
                 key={index}
-                className="rounded-md border bg-gray-100 px-3 py-1 text-sm text-gray-800"
+                className="rounded-md border bg-gray-100 px-3 py-1 text-sm text-secondary-onyx/85"
               >
                 {tool}
               </div>

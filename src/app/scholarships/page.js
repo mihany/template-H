@@ -20,8 +20,11 @@ export const metadata = {
  
 import { Fragment } from 'react'
 import { Disclosure, DisclosureButton, DisclosurePanel, Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
-import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
-import Newsletter from "@/app/components/Newsletter"
+import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline';
+import ContactProgramAdvisor from "@/app/components/ContactProgramAdvisor";
+import UpcomingCohort from "@/app/components/UpcomingCohort";
+import Newsletter from "@/app/components/Newsletter";
+
 
 const tabs = [
   {
@@ -212,7 +215,7 @@ const faqs = [
     return (
       <>
       {/* Here the hero section starts */}
-      <div className="relative bg-secondary-green">
+      <div className="relative bg-secondary-green text-secondary-onyx">
       <div className="relative h-80 overflow-hidden bg-secondary-lightGreen md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
         <img
           alt=""
@@ -244,11 +247,11 @@ const faqs = [
           </defs>
         </svg>
       </div>
-      <div className="relative mx-auto max-w-7xl py-24 sm:py-32 lg:px-8 lg:py-40">
+      <div className="text-secondary-onyx relative mx-auto max-w-7xl py-24 sm:py-32 lg:px-8 lg:py-40">
         <div className="pl-6 pr-6 md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2 lg:pl-24 lg:pr-0 xl:pl-32">
-          <h2 className="text-base/7 font-semibold text-secondary-lightGreen">Award winning support</h2>
+          <h2 className="text-base/7 font-semibold text-secondary-aquaMarine">Award winning support</h2>
           <p className="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">We’re here to help</p>
-          <p className="mt-6 text-base/7 text-gray-300">
+          <p className="mt-6 text-base/7 text-secondary-grey">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a
             scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat quisque ut interdum
             tincidunt duis.
@@ -267,13 +270,17 @@ const faqs = [
     {/* Here the hero section ends */}
 
     {/* Here the Scholarship Cards Section starts */}
-    <div className="bg-white" id="scholarships_section">
+    <div className="bg-white text-secondary-onyx" id="scholarships_section">
       <section aria-labelledby="features-heading" className="mx-auto max-w-7xl py-20 sm:px-2 lg:px-8">
         <div className="mx-auto max-w-2xl px-4 lg:max-w-none lg:px-0">
           <div className="max-w-3xl">
-            <h2 id="features-heading" className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            {/* <h2 id="features-heading" className="text-3xl font-bold tracking-tight text-secondary-lightGreen sm:text-4xl">
+              Hoetzin Scholarships
+            </h2> */}
+            <h2 id="features-heading" className="text-3xl font-bold tracking-tight bg-gradient-to-r from-secondary-green via-secondary-lightGreen to-secondary-aquaMarine inline-block text-transparent bg-clip-text sm:text-4xl">
               Hoetzin Scholarships
             </h2>
+
             {/* <p className="mt-4 text-gray-500">
               The Organize modular system offers endless options for arranging your favorite and most used items. 
               Keep everything at reach and in its place, while dressing up your workspace.
@@ -302,12 +309,12 @@ const faqs = [
                   {tab.features.map((feature) => (
                     <div key={feature.name} className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8">
                       <div className="mt-6 lg:col-span-6 lg:mt-0">
-                        <h3 className="text-lg font-medium text-gray-900">{feature.name}</h3>
+                        <h3 className="text-lg font-medium text-secondary-green">{feature.name}</h3>
                         <p className="mt-2 mb-2 text-sm text-gray-500">{feature.description}</p>
                         {/* Eligibility Criteria */}
                         {feature.eligibilitycriteria && (
                           <>
-                            <h3 className="mt-2 mb-2 text-lg font-medium text-gray-900">Eligibility Criteria</h3>
+                            <h3 className="mt-2 mb-2 text-lg font-medium ">Eligibility Criteria</h3>
                             <ul className="text-sm list-disc pl-6 text-gray-500 mb-8 space-y-3">
                               {feature.eligibilitycriteria.map((criteria, index) => (
                                 <li key={index}>{criteria}</li>
@@ -319,7 +326,7 @@ const faqs = [
                         {/* Scholarship Benefits */}
                         {feature.scholarshipbenefits && (
                           <>
-                            <h3 className="mt-2 mb-2 text-lg font-medium text-gray-900">Scholarship Benefits</h3>
+                            <h3 className="mt-2 mb-2 text-lg font-medium ">Scholarship Benefits</h3>
                             <ul className="text-sm list-disc pl-6 text-gray-500 mb-8 space-y-3">
                               {feature.scholarshipbenefits.map((benefit, index) => (
                                 <li key={index}>{benefit}</li>
@@ -340,8 +347,9 @@ const faqs = [
                     
                   ))}
               {/* Here the Step-by-Step Application Process starts */}
-              <div className="mx-auto max-w-7xl">
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+              <UpcomingCohort />
+              <div className="mx-auto max-w-7xl text-secondary-onyx">
+                <h2 className="text-3xl font-bold tracking-tight  sm:text-4xl mb-4">
                     How it works?
                 </h2>
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -355,11 +363,11 @@ const faqs = [
                             {item.date}
                             <div
                               aria-hidden="true"
-                              className="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0"
+                              className="absolute -ml-2 h-px w-screen -translate-x-full bg-secondary-onyx/20 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0"
                             />
                           </time>
-                          <p className="mt-6 text-lg/8 font-semibold tracking-tight text-gray-900">{item.name}</p>
-                          <p className="mt-1 text-base/7 text-gray-600">{item.description}</p>
+                          <p className="mt-6 text-lg/8 font-semibold tracking-tight text-secondary-onyx">{item.name}</p>
+                          <p className="mt-1 text-base/7 text-secondary-onyx/80">{item.description}</p>
                         </div>
                       ))}
                     </div>
@@ -375,7 +383,7 @@ const faqs = [
     </div>
     {/* Here the Scholarship Cards Section ends */}
 
-    
+    <ContactProgramAdvisor />
 
     {/* Here the faq starts */}
     <div className="bg-secondary-green">
@@ -410,30 +418,15 @@ const faqs = [
                 </dl>
                 </div>
             </div>
-            <div className="relative h-56 mb-96 bg-secondary-green">
+            <div className="relative h-44 mb-40 sm:mb-44 bg-secondary-green">
+              <Newsletter />
               
-              <div className="absolute -bottom-1/2 left-0 w-full transform -translate-y-1/2 h-1/2 ">
-                <Newsletter />
-              </div>
             </div>
-            {/* <div className="mx-auto max-w-7xl min-h-10 bg-secondary-green mb-40 relative">
-            <Newsletter /> */}
-                    {/* <div className="bg-white min-h-40 -top-10 absolute rounded-full">
-                      <Newsletter />
-                    </div> */}
-                    
-            {/* </div> */}
-        </div>
+            
+      </div>
 
     
-    {/* Here the faq ends */}
-    {/* <div className="h-screen"> */}
-      {/*  Top Half  */}
-      {/* <div className="h-1/4 bg-secondary-green"></div> */}
-      
-      {/*  Bottom Half  */}
-      {/* <div className="h-1/4 bg-white"></div> */}
-    {/* </div> */}
+    
     
     </>
     );

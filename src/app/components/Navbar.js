@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import Banner from "@/app/components/Banner";
 
 import { useState } from "react";
 import {
@@ -59,14 +60,15 @@ const products = [
 const callsToAction = [
   { name: "Join a Workshop", href: "/events-at-hoetzin", icon: PlayCircleIcon },
   { name: "Get a call", href: "/contact", icon: PhoneIcon },
-  { name: "View all courses", href: "#", icon: RectangleGroupIcon },
+  { name: "View all courses", href: "/courses", icon: RectangleGroupIcon },
 ];
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="relative isolate z-10 bg-white">
+    <>
+    <header className="relative isolate z-10 bg-secondary-robinEggBlue/10 text-secondary-onyx">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
@@ -75,6 +77,7 @@ export default function Header() {
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Hoetzin</span>
             <Image
+              className="fill-secondary-lightGreen"
               src="/images/hoetzin-logo1.png"
               alt="Hoetzin logo"
               width={150}
@@ -108,7 +111,7 @@ export default function Header() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Popover>
-            <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900">
+            <PopoverButton className="flex items-center gap-x-1 text-base/6 font-semibold text-gray-900">
               Courses
               <ChevronDownIcon
                 aria-hidden="true"
@@ -171,8 +174,8 @@ export default function Header() {
           <a href="#" className="text-sm/6 font-semibold text-gray-900">
             Marketplace
           </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
-            Company
+          <a href="/blog" className="text-sm/6 font-semibold text-gray-900">
+            Blog
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -189,12 +192,15 @@ export default function Header() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+            <a href="/" className="-m-1.5 p-1.5">
+              <span className="sr-only">Hoetzin</span>
               <Image
-                alt=""
-                src="https://images.unsplash.com/photo-1496200186974-4293800e2c20?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                className="h-8 w-auto"
+                className="fill-secondary-lightGreen"
+                src="/images/hoetzin-logo1.png"
+                alt="Hoetzin logo"
+                width={150}
+                height={40}
+                priority={true} // Preloads the image for better performance
               />
             </a>
             <button
@@ -243,10 +249,10 @@ export default function Header() {
                   Marketplace
                 </a>
                 <a
-                  href="#"
+                  href="/blog"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  Company
+                  Blog
                 </a>
               </div>
               <div className="py-6">
@@ -262,5 +268,7 @@ export default function Header() {
         </DialogPanel>
       </Dialog>
     </header>
+                    <Banner />
+    </>
   );
 }

@@ -1,6 +1,12 @@
+import Flipper from "@/app/components/Flipper";
+import TypingEffect from "@/app/components/TypingEffect";
+import Link from "next/link";
+
+
 export default function HeroHomepage() {
     return (
-      <div className="relative isolate -z-10 ">
+      <>
+      <div className="relative isolate  ">
             <svg
               className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
               aria-hidden="true"
@@ -30,7 +36,7 @@ export default function HeroHomepage() {
               aria-hidden="true"
             >
               <div
-                className="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+                className="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#48CFCB] to-[#229799] opacity-30"
                 style={{
                   clipPath:
                     'polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)',
@@ -41,15 +47,28 @@ export default function HeroHomepage() {
               <div className="mx-auto max-w-7xl px-6 pb-16 pt-18 sm:pt-16 lg:px-8 lg:pt-6">
                 <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none">
                   <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                    <h1 className="text-4xl font-bold tracking-tight text-Prussian-Blue sm:text-6xl lg:pt-28">
-                      Unleash your <span className="text-Light-Sea-Green text-decoration">Ambition</span>.
+                    <h1 className="text-4xl text-secondary-onyx font-bold tracking-tight sm:text-6xl pt-5 lg:pt-20">
+                      Unleash your <span className="text-secondary-orangeCTA text-decoration">Ambition</span>.
                       <br/>
                       Step into the world of Tech
                     </h1>
-                    <p className="relative mt-6 text-2xl leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+                    {/* <p className="relative mt-6 text-2xl leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
                       Unlock Your Competitive Edge: One Word <br/>
                       Defines It All - 'Technology.'
-                    </p>
+                    </p> */}
+                    <div className="py-8 ">
+                      {/* <Flipper /> */}
+                      <TypingEffect />
+                      
+
+                      <a
+                        href="/courses"
+                        className="rounded-md bg-secondary-orangeCTA px-4 py-3 text-base font-semibold text-white shadow-xs hover:bg-secondary-orangeCTA/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-orangeCTA/85"
+                      >
+                        Our Courses
+                      </a>
+                      
+                    </div>
                   </div>
                   <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
                     <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
@@ -59,7 +78,7 @@ export default function HeroHomepage() {
                           alt=""
                           className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         />
-                        <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                        <div className="pointer-events-auto absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                       </div>
                     </div>
                     <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
@@ -69,7 +88,7 @@ export default function HeroHomepage() {
                           alt=""
                           className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         />
-                        <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                        <div className="pointer-events-auto absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                       </div>
                       <div className="relative">
                         <img
@@ -77,7 +96,7 @@ export default function HeroHomepage() {
                           alt=""
                           className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         />
-                        <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                        <div className="pointer-events-auto absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                       </div>
                     </div>
                     <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
@@ -87,7 +106,7 @@ export default function HeroHomepage() {
                           alt=""
                           className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         />
-                        <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                        <div className="pointer-events-auto absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                       </div>
                       <div className="relative">
                         <img
@@ -95,7 +114,7 @@ export default function HeroHomepage() {
                           alt=""
                           className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         />
-                        <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                        <div className="pointer-events-auto absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                       </div>
                     </div>
                   </div>
@@ -103,6 +122,8 @@ export default function HeroHomepage() {
               </div>
             </div>
           </div>
+                      
+        </>
     );
   }
   

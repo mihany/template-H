@@ -27,17 +27,17 @@ export default function AdmissionProcess() {
     ];
   
     return (
-      <div className="bg-secondary-lightGreenBG/15 py-16 sm:py-24">
+      <div className="bg-secondary-robinEggBlue/10 text-secondary-onyx py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           {/* Heading */}
           <div className="text-center">
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-secondary-lightGreen">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-secondary-onyx">
               Admission
             </h3>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
               How to apply to our Web Development bootcamp
             </h2>
-            <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+            <p className="mt-4 max-w-2xl mx-auto text-lg text-secondary-onyx/80">
               Our admission process is beginner-friendly and will give you a taste of our course. Start now!
             </p>
           </div>
@@ -51,21 +51,21 @@ export default function AdmissionProcess() {
                   className="bg-white shadow rounded-lg p-6 text-center flex flex-col items-center relative"
                 >
                   {/* Step Number */}
-                  <div className="bg-secondary-lightGreen text-secondary-lightGreenBG font-bold rounded-full w-10 h-10 flex items-center justify-center mb-4">
+                  <div className="bg-secondary-robinEggBlue text-secondary-whiteSmoke font-bold rounded-full w-10 h-10 flex items-center justify-center mb-4">
                     {step.number}
                   </div>
                   {/* Title */}
-                  <h3 className="text-lg font-semibold text-gray-900">
+                  <h3 className="text-lg font-semibold text-secondary-onyx">
                     {step.title}
                   </h3>
                   {/* Description */}
-                  <p className="mt-2 text-sm text-gray-600">{step.description}</p>
+                  <p className="mt-2 text-sm text-secondary-onyx/75">{step.description}</p>
                   {/* Arrow */}
                   {index < steps.length - 1 && (
                     <div className="absolute top-1/2 right-[-1.5rem] hidden lg:block transform -translate-y-1/2">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 text-secondary-lightGreen"
+                        className="h-6 w-6 text-secondary-onyx"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -87,8 +87,8 @@ export default function AdmissionProcess() {
           {/* Button */}
           <div className="mt-10 text-center">
             <a
-              href="#"
-              className="inline-block rounded-md bg-secondary-lightGreen px-6 py-3 text-sm font-semibold text-white shadow hover:bg-secondary-lightGreen/70 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-secondary-lightGreen"
+              href="/apply"
+              className="inline-block rounded-md bg-secondary-orangeCTA px-6 py-3 text-sm font-semibold text-white shadow hover:bg-secondary-lightGreen/70 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-secondary-lightGreen"
             >
               Apply now
             </a>

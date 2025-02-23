@@ -50,20 +50,20 @@ const sections = [
   {
     heading: "Contacting us",
     content: `
-      If you have any questions about this Policy, please contact us by email at <a href="mailto:support@hoetzin.com">support@hoetzin.com</a>.
+      If you have any questions about this Policy, please contact us by email at <a href="mailto:support@hoetzin.com" class="text-secondary-lightGreen hover:underline">support@hoetzin.com</a>.
     `,
   },
 ];
 
 export default function PrivacyPolicy() {
   return (
-    <div className="relative mx-auto max-w-[45rem] text-center pb-24">
+    <div className="relative mx-auto max-w-[45rem] text-center pb-24 text-secondary-onyx">
       {/* Header */}
-      <div className="p-20">
-        <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+      <div className="py-20 px-16">
+        <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
           Privacy policy
         </h1>
-        <p className="mt-4 text-base/7 text-slate-600">
+        <p className="mt-4 text-base/7 text-secondary-onyx/80">
           Last updated on November 2, 2024
         </p>
       </div>
@@ -76,11 +76,11 @@ export default function PrivacyPolicy() {
         </p>
         {sections.map((section, index) => (
           <div key={index} className="mb-10">
-            <h2 className="mb-5 text-base/7 font-semibold text-gray-900">
+            <h2 className="mb-5 text-base/7 font-semibold text-secondary-onyx">
               {section.heading}
             </h2>
             <div
-              className="prose prose-slate text-gray-600"
+              className="prose prose-slate text-secondary-onyx/80"
               dangerouslySetInnerHTML={{ __html: section.content }}
             ></div>
           </div>

@@ -1,18 +1,20 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
-import Newsletter from "@/app/components/Newsletter";
+import Image from "next/image";
 
-export default function IncentivesForCoursePage(props){
+
+export default function FAQhomepage(props){
     return(
-        <>
         <div className="bg-secondary-darkCyan">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8 pt-20 sm:pt-32 lg:pt-20">
+            
+            {/* sm:py-32 lg:px-8 lg:py-20 */}
+            <div className="mx-auto max-w-7xl px-6 pt-20">
                 <h2 className="text-center">
-                    <span className="mx-auto inline-flex items-center rounded-full bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-secondary-lightGreen ring-inset">
+                    <span className="mx-auto inline-flex items-center rounded-full bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-secondary-robinEggBlue ring-inset">
                         FAQ
                     </span>
                 </h2>
-                <div className="mx-auto max-w-4xl divide-y divide-secondary-lightGreen">
+                <div className="mx-auto max-w-4xl divide-y divide-secondary-robinEggBlue">
                 
                 <h2 className="text-center text-4xl font-semibold tracking-tight text-white sm:text-5xl">
                     Your questions are answered
@@ -38,10 +40,5 @@ export default function IncentivesForCoursePage(props){
                 </div>
             </div>
         </div>
-
-        <div className="relative h-64 sm:h-56 md:h-72 mb-40 sm:mb-44 bg-secondary-darkCyan">
-            <Newsletter />
-        </div>
-        </>
     );
 }

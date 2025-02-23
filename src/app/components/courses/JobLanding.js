@@ -26,7 +26,7 @@ export default function JobLanding() {
       <div className="mx-auto max-w-7xl md:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
           <div className="px-6 md:px-0 lg:pt-4 lg:pr-4">
-            <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
+            <div className="mx-auto max-w-2xl mb-6 lg:mx-0 lg:max-w-lg">
               <h2 className="text-base/7 font-semibold text-secondary-lightGreen">Hoetzin Career Center helps you to</h2>
               <h2 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
                 Land a Job
@@ -48,7 +48,7 @@ export default function JobLanding() {
               </dl>
               
             </div>
-            <a href="#" className="my-5 text-sm/6 font-semibold text-secondary-lightGreen">
+            <a href="/career-center" className="text-base/6 font-semibold text-secondary-orangeCTA">
               Learn more <span aria-hidden="true">→</span>
             </a>
           </div>

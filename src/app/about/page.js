@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Newsletter from "@/app/components/Newsletter";
 
 export const metadata = {
   title: "About Us - Hoetzin",
@@ -60,18 +61,18 @@ const values = [
 
 export default function AboutUs() {
   return (
-    <div className="bg-white">
+    <div className="bg-secondary-robinEggBlue/5 text-secondary-onyx">
       {/* Content section */}
       <div className="mx-auto max-w-7xl p-6 lg:p-24">
         <div className="mx-auto max-w-2xl lg:max-w-none lg:grid lg:grid-cols-3 lg:gap-8">
           <div className="lg:col-span-2">
-            <p className="text-xl leading-8 text-gray-600">
+            <p className="text-xl leading-8 text-secondary-onyx/70">
               The story of Hoetzin began in Cairo, Egypt in 2024.
             </p>
-            <h2 className="mt-10 text-3xl font-bold tracking-tight text-Prussian-Blue sm:text-4xl">
+            <h2 className="mt-10 text-3xl font-bold tracking-tight sm:text-4xl">
               WHY Hoetzin?
             </h2>
-            <div className="mt-10 max-w-xl text-base leading-7 text-gray-700">
+            <div className="mt-10 max-w-xl text-base leading-7 text-secondary-onyx/85">
               <p>
                 Where a team of professionals in the tech industry saw the value
                 of Tech education in influencing their careers and lives, and
@@ -91,17 +92,17 @@ export default function AboutUs() {
                 headquarters in the US alongside partnerships with Businesses
                 and educational institutions all over the world.
               </p>
-              <h2 className="mt-10 text-3xl font-bold tracking-tight text-Prussian-Blue sm:text-4xl">
+              <h2 className="mt-10 text-3xl font-bold tracking-tight text-secondary-onyx sm:text-4xl">
                 Our Mission
               </h2>
-              <p className="mt-10">
+              <p className="mt-10 text-secondary-onyx/70">
                 We are on a mission to change people&lsquo;s lives, how are we
                 doing that?, by introducing and educating people about tech and
                 how it can change their lives by changing their careers.
               </p>
             </div>
           </div>
-          <div className="lg:col-span-1 lg:sticky lg:top-24 lg:self-start">
+          <div className="pt-4 sm:pt-0 lg:col-span-1 lg:sticky lg:top-24 lg:self-start text-secondary-onyx">
             <div className="space-y-8">
               <dl className="w-full space-y-8">
                 {stats.map((stat) => (
@@ -109,7 +110,7 @@ export default function AboutUs() {
                     key={stat.label}
                     className="flex flex-col-reverse gap-y-4"
                   >
-                    <dt className="text-base leading-7 text-gray-600">
+                    <dt className="text-base leading-7 text-secondary-onyx/70">
                       {stat.label}
                     </dt>
                     <dd className="text-5xl font-semibold tracking-tight text-Prussian-Blue">
@@ -191,155 +192,72 @@ export default function AboutUs() {
       </div>
 
       {/* Values section */}
-      <div className="mx-auto mt-8 max-w-7xl px-6 sm:mt-16 lg:px-8">
-        <div className="mx-auto max-w-3xl lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-Prussian-Blue sm:text-4xl">
-            Our values
-          </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Hoetzin&lsquo;s vision is to be a world leader in tech education, by
-            making tech education more affordable and accessible for people from
-            across the world, our vision is a world where work and life advances
-            to make progress a constant in everyone&lsquo;s life, technology is
-            advancing fast so should our environments, lives and work.
-          </p>
+      <section className="bg-secondary-darkCyan text-secondary-whiteSmoke">
+        <div className="mx-auto mt-8 max-w-7xl pt-14 pb-6 sm:pt-15 px-6 sm:mt-16 lg:px-8">
+          <div className="mx-auto max-w-3xl lg:mx-0">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+              Our values
+            </h2>
+            <p className="mt-6 text-lg leading-8 ">
+              Hoetzin&lsquo;s vision is to be a world leader in tech education, by
+              making tech education more affordable and accessible for people from
+              across the world, our vision is a world where work and life advances
+              to make progress a constant in everyone&lsquo;s life, technology is
+              advancing fast so should our environments, lives and work.
+            </p>
+          </div>
+          <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            {values.map((value) => (
+              <div key={value.name}>
+                <dt className="font-semibold ">{value.name}</dt>
+                <dd className="mt-1">{value.description}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
-        <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {values.map((value) => (
-            <div key={value.name}>
-              <dt className="font-semibold text-Prussian-Blue">{value.name}</dt>
-              <dd className="mt-1 text-gray-600">{value.description}</dd>
-            </div>
-          ))}
-        </dl>
-      </div>
 
-      {/* Logo cloud */}
-      <div className="relative isolate -z-9 mt-32 mb-32 sm:mt-48 sm:mb-48">
-        <div className="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
-          <svg
-            className="h-[40rem] w-[80rem] flex-none stroke-gray-200"
-            aria-hidden="true"
-          >
-            <defs>
-              <pattern
-                id="e9033f3e-f665-41a6-84ef-756f6778e6fe"
-                width={200}
-                height={200}
-                x="50%"
-                y="50%"
-                patternUnits="userSpaceOnUse"
-                patternTransform="translate(-100 0)"
-              >
-                <path d="M.5 200V.5H200" fill="none" />
-              </pattern>
-            </defs>
-            <svg x="50%" y="50%" className="overflow-visible fill-gray-50">
-              <path
-                d="M-300 0h201v201h-201Z M300 200h201v201h-201Z"
+        {/* Logo cloud */}
+        {/* <div className="relative isolate -z-9 mt-32 mb-32 sm:mt-48 sm:mb-48">
+          <div className="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
+            <svg
+              className="h-[40rem] w-[80rem] flex-none stroke-gray-200"
+              aria-hidden="true"
+            >
+              <defs>
+                <pattern
+                  id="e9033f3e-f665-41a6-84ef-756f6778e6fe"
+                  width={200}
+                  height={200}
+                  x="50%"
+                  y="50%"
+                  patternUnits="userSpaceOnUse"
+                  patternTransform="translate(-100 0)"
+                >
+                  <path d="M.5 200V.5H200" fill="none" />
+                </pattern>
+              </defs>
+              <svg x="50%" y="50%" className="overflow-visible fill-gray-50">
+                <path
+                  d="M-300 0h201v201h-201Z M300 200h201v201h-201Z"
+                  strokeWidth={0}
+                />
+              </svg>
+              <rect
+                width="100%"
+                height="100%"
                 strokeWidth={0}
+                fill="url(#e9033f3e-f665-41a6-84ef-756f6778e6fe)"
               />
             </svg>
-            <rect
-              width="100%"
-              height="100%"
-              strokeWidth={0}
-              fill="url(#e9033f3e-f665-41a6-84ef-756f6778e6fe)"
-            />
-          </svg>
-        </div>
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-lg font-semibold leading-8 text-Prussian-Blue">
-            Trusted by
-          </h2>
-          <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-            <Image
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="https://images.unsplash.com/photo-1529612700005-e35377bf1415?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Transistor"
-              width={158}
-              height={48}
-            />
-            <Image
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="https://images.unsplash.com/photo-1529612700005-e35377bf1415?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Reform"
-              width={158}
-              height={48}
-            />
-            <Image
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="https://images.unsplash.com/photo-1529612700005-e35377bf1415?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Tuple"
-              width={158}
-              height={48}
-            />
-            <Image
-              className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-              src="https://images.unsplash.com/photo-1529612700005-e35377bf1415?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="SavvyCal"
-              width={158}
-              height={48}
-            />
-            <Image
-              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-              src="https://images.unsplash.com/photo-1529612700005-e35377bf1415?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Statamic"
-              width={158}
-              height={48}
-            />
           </div>
-        </div>
-      </div>
-
+          
+        </div> */}
       {/* Newsletter  */}
-      <div className="bg-white py-20 sm:py-24 lg:py-32 z-10">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-8 lg:px-8">
-          <div className="max-w-xl text-3xl font-bold tracking-tight text-Prussian-Blue sm:text-4xl lg:col-span-7">
-            <h2 className="inline sm:block lg:inline xl:block">
-              {/* Want product news and updates? */}
-              Subscribe To Our Newsletter
-            </h2>{" "}
-            <p className="inline text-2xl sm:block lg:inline xl:block">
-              {/* Sign up for our newsletter. */}
-              For the most recent updates, promotional codes, and intriguing
-              insights from the tech industry.
-            </p>
-          </div>
-          <form className="w-full max-w-md lg:col-span-5 lg:pt-2">
-            <div className="flex gap-x-4">
-              <label htmlFor="email-address" className="sr-only">
-                Email address
-              </label>
-              <input
-                id="email-address"
-                name="email"
-                type="email"
-                autoComplete="email"
-                required
-                className="min-w-0 flex-auto rounded-md border-0 px-3.5 py-2 text-Prussian-Blue shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-teal-600 sm:text-sm sm:leading-6"
-                placeholder="Enter your email"
-              />
-              <button
-                type="submit"
-                className="flex-none rounded-md bg-Light-Sea-Green px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
-              >
-                Subscribe
-              </button>
-            </div>
-            <p className="mt-4 text-sm leading-6 text-Prussian-Blue">
-              We care about your data. Read our{" "}
-              <a
-                href="/TermsAndPrivacyPolicy"
-                className="font-semibold text-Light-Sea-Green hover:text-teal-600"
-              >
-                privacy&nbsp;policy
-              </a>
-              .
-            </p>
-          </form>
+        <div className="relative h-64 sm:h-56 md:h-72 mb-40 sm:mb-44 bg-secondary-green">
+          <Newsletter />
         </div>
-      </div>
+      </section>
+      
     </div>
   );
 }

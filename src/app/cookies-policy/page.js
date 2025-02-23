@@ -58,10 +58,10 @@ export default function CookiesPolicy() {
         <br/>
         Visit the following links for more information on managing cookies in your browser:
         <ul class="list-disc pl-5 space-y-2">
-          <li><a href="https://support.google.com/chrome/answer/95647" class="text-indigo-600 hover:underline">Google Chrome</a></li>
-          <li><a href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac" class="text-indigo-600 hover:underline">Safari</a></li>
-          <li><a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" class="text-indigo-600 hover:underline">Mozilla Firefox</a></li>
-          <li><a href="https://support.microsoft.com/en-us/microsoft-edge" class="text-indigo-600 hover:underline">Microsoft Edge</a></li>
+          <li><a href="https://support.google.com/chrome/answer/95647" class="text-secondary-darkCyan hover:underline">Google Chrome</a></li>
+          <li><a href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac" class="text-secondary-darkCyan hover:underline">Safari</a></li>
+          <li><a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" class="text-secondary-darkCyan hover:underline">Mozilla Firefox</a></li>
+          <li><a href="https://support.microsoft.com/en-us/microsoft-edge" class="text-secondary-darkCyan hover:underline">Microsoft Edge</a></li>
         </ul>
       `,
     },
@@ -69,20 +69,20 @@ export default function CookiesPolicy() {
       heading: "Contact information",
       content: `
         If you have any questions about our Cookies Policy, please contact us at 
-        <a href="mailto:support@hoetzin.com" class="text-indigo-600 hover:underline">support@hoetzin.com</a>.
+        <a href="mailto:support@hoetzin.com" class="text-secondary-lightGreen hover:underline">support@hoetzin.com</a>.
       `,
     },
   ];
 
   return (
-    <div className="bg-white py-16 sm:py-20">
+    <div className="bg-white text-secondary-onyx py-16 sm:py-20">
       {/* Header */}
       <div className="px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+          <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
             Cookies Policy
           </h1>
-          <p className="mt-4 text-base text-gray-600">Last updated on November 2, 2024</p>
+          <p className="mt-4 text-base text-secondary-onyx/80">Last updated on November 2, 2024</p>
         </div>
       </div>
 
@@ -91,11 +91,11 @@ export default function CookiesPolicy() {
         <div className="prose prose-lg prose-slate mx-auto max-w-[45rem]">
           {sections.map((section, index) => (
             <div key={index} className="mb-10">
-              <h2 className="text-base/7 font-semibold text-gray-900 mb-4">
+              <h2 className="text-base/7 font-semibold mb-4">
                 {section.heading}
               </h2>
               <div
-                className="text-gray-600"
+                className="text-secondary-onyx/80"
                 dangerouslySetInnerHTML={{ __html: section.content }}
               ></div>
             </div>

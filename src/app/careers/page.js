@@ -20,23 +20,23 @@ export const metadata = {
   
   export default function Careers() {
     return (
-        <div className="overflow-hidden bg-white py-32">
+        <div className="overflow-hidden bg-secondary-robinEggBlue/5 text-secondary-onyx py-32">
         <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
             <div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
-              <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Our people</h2>
-              <p className="mt-6 text-xl/8 text-gray-600">
+              <h2 className="text-4xl font-semibold tracking-tight sm:text-5xl">Our people</h2>
+              <p className="mt-6 text-xl/8 text-secondary-onyx/70">
                 Quasi est quaerat. Sit molestiae et. Provident ad dolorem occaecati eos iste. Soluta rerum quidem minus ut
                 molestiae velit error quod. Excepturi quidem expedita molestias quas.
               </p>
-              <p className="mt-6 text-base/7 text-gray-600">
+              <p className="mt-6 text-base/7 text-secondary-onyx/70">
                 Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
                 fugiat veniam occaecat fugiat. Quasi aperiam sit non sit neque reprehenderit.
               </p>
               <div className="mt-10 flex">
                 <a
                   href="#"
-                  className="rounded-md bg-secondary-lightGreen px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-secondary-lightGreen/90 focus-visible:outline-secondary-lightGreen/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                  className="rounded-md bg-secondary-orangeCTA px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-secondary-lightGreen/90 focus-visible:outline-secondary-lightGreen/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                 >
                   Join our team <span aria-hidden="true">&rarr;</span>
                 </a>

@@ -48,16 +48,16 @@ const includedFeatures = [
   'Official member t-shirt',
 ]
 
-export default function Apply() {
+export default function CareerCenter() {
     return (
       <>
         {/* The start of hero section */}
-        <div className="bg-white py-6 sm:py-6">
+        <div className="bg-white py-6 sm:py-6 text-secondary-onyx">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0">
-              <p className="text-base/7 font-semibold text-indigo-600">Get the help you need</p>
-              <h2 className="mt-2 text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Career Center</h2>
-              <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
+              <p className="text-base/7 font-semibold text-secondary-darkCyan">Get the help you need</p>
+              <h2 className="mt-2 text-5xl font-semibold tracking-tight sm:text-7xl">Career Center</h2>
+              <p className="mt-8 text-lg font-medium text-pretty text-secondary-onyx/80 sm:text-xl/8">
                 Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
                 fugiat veniam occaecat fugiat.
               </p>
@@ -69,11 +69,11 @@ export default function Apply() {
 
         {/* The start of feature section */}
 
-        <div className="overflow-hidden bg-white py-8 sm:py-8">
+        <div className="overflow-hidden bg-white py-8 sm:py-8 text-secondary-onyx">
           <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
             <div className="max-w-4xl">
-              <p className="text-base/7 font-semibold text-indigo-600">About us</p>
-              <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
+              <p className="text-base/7 font-semibold text-secondary-darkCyan">About us</p>
+              <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty sm:text-5xl">
                 On a mission to empower remote teams
               </h1>
               <p className="mt-6 text-xl/8 text-balance text-gray-700">
@@ -83,7 +83,7 @@ export default function Apply() {
             </div>
             <section className="mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
               <div className="lg:pr-8">
-                <h2 className="text-2xl font-semibold tracking-tight text-pretty text-gray-900">Our mission</h2>
+                <h2 className="text-2xl font-semibold tracking-tight text-pretty">Our mission</h2>
                 <p className="mt-6 text-base/7 text-gray-600">
                   Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet
                   vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque
@@ -165,25 +165,25 @@ export default function Apply() {
       {/* The start of feature section */}
 
       {/* The start of Career advisor section */}
-      <div className="bg-gray-50">
+      <div className="bg-secondary-robinEggBlue/10 text-secondary-onyx">
         <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
           <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
             <div className="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
               <div>
-                <h2 className="text-4xl font-bold tracking-tight text-gray-900">
+                <h2 className="text-4xl font-bold tracking-tight">
                   Career Advising
                 </h2>
-                <p className="mt-4 text-gray-500">
+                <p className="mt-4 text-secondary-onyx/80">
                   At the beginning at least, but then we realized we could make a lot more money if we kinda stopped
                   caring about that. Our new strategy is to write a bunch of things that look really good in the
                   headlines, then clarify in the small print but hope people don't actually read it.
                 </p>
-                <p className="mt-4 text-gray-500">
+                <p className="mt-4 text-secondary-onyx/80">
                   At the beginning at least, but then we realized we could make a lot more money if we kinda stopped
                   caring about that. Our new strategy is to write a bunch of things that look really good in the
                   headlines, then clarify in the small print but hope people don't actually read it.
                 </p>
-                <p className="mt-4 text-gray-500">
+                <p className="mt-4 text-secondary-onyx/80">
                   At the beginning at least, but then we realized we could make a lot more money if we kinda stopped
                   caring about that. Our new strategy is to write a bunch of things that look really good in the
                   headlines, then clarify in the small print but hope people don't actually read it.
@@ -202,8 +202,8 @@ export default function Apply() {
                     <img alt="" src={incentive.imageSrc} className="size-16" />
                   </div>
                   <div className="mt-4 sm:mt-0 sm:ml-6 lg:mt-6 lg:ml-0">
-                    <h3 className="text-sm font-medium text-gray-900">{incentive.name}</h3>
-                    <p className="mt-2 text-sm text-gray-500">{incentive.description}</p>
+                    <h3 className="text-sm font-medium text-secondary-onyx/80">{incentive.name}</h3>
+                    <p className="mt-2 text-sm text-secondary-onyx/60">{incentive.description}</p>
                   </div>
                 </div>
               ))}
@@ -272,9 +272,9 @@ export default function Apply() {
       {/* The end of Career mentor section */}
 
       {/* The start of Career mentor section */}
-          <div className="bg-indigo-100">
-            <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:justify-between lg:px-8">
-              <h2 className="max-w-2xl text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+          <div className="bg-secondary-darkCyan text-secondary-whiteSmoke">
+            <div className="mx-auto max-w-7xl px-6 pt-24 sm:pt-32 lg:flex lg:items-center lg:justify-between lg:px-8">
+              <h2 className="max-w-2xl text-4xl font-semibold tracking-tight sm:text-5xl">
                 Ready to dive in? <br />
                 Check career workshop events
               </h2>
@@ -285,7 +285,7 @@ export default function Apply() {
                 >
                   Get started
                 </a>
-                <a href="/events-at-hoetzin" className="text-sm/6 font-semibold text-gray-900">
+                <a href="/events-at-hoetzin" className="text-sm/6 font-semibold">
                   Learn more <span aria-hidden="true">→</span>
                 </a>
               </div>
@@ -294,7 +294,9 @@ export default function Apply() {
       {/* The end of Career mentor section */}
 
       {/* The start of newsletter section */}
-              <Newsletter />
+      <div className="relative h-64 sm:h-56 md:h-72 mb-40 sm:mb-44 bg-secondary-green">
+          <Newsletter />
+      </div>
       {/* The end of newsletter section */}
       </>
     );

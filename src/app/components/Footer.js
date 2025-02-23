@@ -94,7 +94,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary-green">
+    <footer className="bg-secondary-onyx">
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
@@ -110,7 +110,7 @@ export default function Footer() {
               src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
               className="h-9"
             /> */}
-            <p className="text-balance text-sm/6 text-secondary-grey">
+            <p className="text-balance text-sm/6 text-secondary-whiteSmoke">
               Making the world a better place through game-changer Bootcamps.
             </p>
             <div className="flex gap-x-6">
@@ -118,7 +118,7 @@ export default function Footer() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-secondary-grey hover:text-secondary-grey/80"
+                  className="text-secondary-whiteSmoke hover:text-secondary-whiteSmoke/80"
                 >
                   <span className="sr-only">{item.name}</span>
                   <item.icon aria-hidden="true" className="size-6" />
@@ -129,7 +129,7 @@ export default function Footer() {
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm/6 font-semibold text-secondary-aquaMarine">
+                <h3 className="text-sm/6 font-semibold text-secondary-robinEggBlue">
                   Courses
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -137,7 +137,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm/6 text-secondary-grey hover:text-white"
+                        className="text-sm/6 text-secondary-whiteSmoke hover:text-white"
                       >
                         {item.name}
                       </a>
@@ -146,13 +146,13 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm/6 font-semibold text-secondary-aquaMarine">Resources</h3>
+                <h3 className="text-sm/6 font-semibold text-secondary-robinEggBlue">Resources</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.resources_footer.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm/6 text-secondary-grey hover:text-white"
+                        className="text-sm/6 text-secondary-whiteSmoke hover:text-white"
                       >
                         {item.name}
                       </a>
@@ -163,13 +163,13 @@ export default function Footer() {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm/6 font-semibold text-secondary-aquaMarine">@Hoetzin</h3>
+                <h3 className="text-sm/6 font-semibold text-secondary-robinEggBlue">@Hoetzin</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.company.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm/6 text-secondary-grey hover:text-white"
+                        className="text-sm/6 text-secondary-whiteSmoke hover:text-white"
                       >
                         {item.name}
                       </a>
@@ -178,13 +178,13 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm/6 font-semibold text-secondary-aquaMarine">About Us</h3>
+                <h3 className="text-sm/6 font-semibold text-secondary-robinEggBlue">About Us</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.aboutus_footer.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm/6 text-secondary-grey hover:text-white"
+                        className="text-sm/6 text-secondary-whiteSmoke hover:text-white"
                       >
                         {item.name}
                       </a>
@@ -195,8 +195,8 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-16 border-t border-secondary-aquaMarine/50 pt-8 sm:mt-20 lg:mt-24">
-          <p className="text-sm/6 text-secondary-aquaMarine">
+        <div className="mt-16 border-t border-secondary-robinEggBlue/50 pt-8 sm:mt-20 lg:mt-24">
+          <p className="text-sm/6 text-secondary-robinEggBlue">
             &copy; 2025 Hoetzin, Inc. All rights reserved.
           </p>
         </div>

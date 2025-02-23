@@ -21,7 +21,6 @@ export const metadata = {
 import Newsletter from "@/app/components/Newsletter"
 import ModalExample from "@/app/components/ModalExample";
 
-import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import {
   CalendarIcon,
   ChevronLeftIcon,
@@ -174,7 +173,7 @@ const items = [
   },
 ]
 
-export default function Eventsathoetzin() {
+export default function EventsAtHoetzin() {
     return (
       <>
         {/* <div className="bg-white">
@@ -252,7 +251,7 @@ export default function Eventsathoetzin() {
                   dateTime={day.date}
                   className={classNames(
                     'mx-auto flex size-7 items-center justify-center rounded-full',
-                    day.isSelected && day.isToday && 'bg-indigo-600',
+                    day.isSelected && day.isToday && 'bg-secondary-lightGreen',
                     day.isSelected && !day.isToday && 'bg-gray-900',
                   )}
                 >
@@ -263,7 +262,7 @@ export default function Eventsathoetzin() {
           </div>
           <button
             type="button"
-            className="mt-8 w-full rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="mt-8 w-full rounded-md bg-secondary-orangeCTA px-3 py-2 text-sm font-semibold text-white shadow hover:bg-secondary-orangeCTA/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Book my ticket
           </button>
@@ -303,75 +302,52 @@ export default function Eventsathoetzin() {
                   </div>
                 </dl>
               </div>
-              <Menu as="div" className="absolute right-0 top-6 xl:relative xl:right-auto xl:top-auto xl:self-center">
-                <div>
-                  <MenuButton className="-m-2 flex items-center rounded-full p-2 text-gray-500 hover:text-gray-600">
-                    <span className="sr-only">Open options</span>
-                    <EllipsisHorizontalIcon className="size-5" aria-hidden="true" />
-                  </MenuButton>
-                </div>
-
-                <MenuItems
-                  transition
-                  className="absolute right-0 z-10 mt-2 w-36 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
-                >
-                  <div className="py-1">
-                    <MenuItem>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none"
-                      >
-                        Edit
-                      </a>
-                    </MenuItem>
-                    <MenuItem>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none"
-                      >
-                        Cancel
-                      </a>
-                    </MenuItem>
-                  </div>
-                </MenuItems>
-              </Menu>
+              
             </li>
           ))}
         </ol>
       </div>
 
-      <h1 className="text-3xl font-semibold text-gray-900">What they said about workshops?</h1>
-      <h2 className="text-base font-semibold text-gray-900">Check out</h2>
-      
-        <div className="relative flex mx-auto max-w-7xl items-center">
-            <div className="relative flex max-w-[100vw] overflow-hidden py-5">
-              <div className="flex w-max animate-marquee [--duration:30s] hover:[animation-play-state:paused]">
-                {[...items, ...items].map((item, index) => (
-                  <div key={index} className="h-full px-2.5">
-                    <div className="relative h-full w-[28rem] rounded-2xl border border-black/5 bg-white/5 px-8 py-6">
-                      <div className="pb-4 font-light text-black/75">{item.body}</div>
+      </div>
+      <ModalExample />
+      <section className="bg-secondary-darkCyan">
+        <div className="mx-auto max-w-7xl py-8 px-6 lg:px-8">
+        <h1 className="text-3xl font-semibold text-secondary-whiteSmoke">What they said about workshops?</h1>
+        <h2 className="text-base font-semibold text-secondary-whiteSmoke">Check out</h2>
+        
+          <div className="relative flex mx-auto max-w-7xl items-center">
+              <div className="relative flex max-w-[100vw] overflow-hidden py-5">
+                <div className="flex w-max animate-marquee [--duration:30s] hover:[animation-play-state:paused]">
+                  {[...items, ...items].map((item, index) => (
+                    <div key={index} className="h-full px-2.5">
+                      <div className="relative h-full w-[28rem] rounded-2xl border border-secondary-onyx/5 bg-secondary-whiteSmoke/85 px-8 py-6">
+                        <div className="pb-4 font-light text-secondary-onyx">{item.body}</div>
 
-                      <div className="mt-auto flex items-center gap-4">
-                        <img src={item.image} className="h-9 w-9 rounded-full" />
+                        <div className="mt-auto flex items-center gap-4">
+                          <img src={item.image} className="h-9 w-9 rounded-full" />
 
-                        <div className="flex flex-col text-sm">
-                          <div className="text-black">{item.name}</div>
+                          <div className="flex flex-col text-sm">
+                            <div className="text-secondary-onyx">{item.name}</div>
 
-                          <div className="text-black/75">{item.title}</div>
+                            <div className="text-secondary-onyx/75">{item.title}</div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-      
-    </div>
-        {/* Events calendar ends here */}
-          <Newsletter />
+            </div>
 
-          <ModalExample />
+            <div className="relative h-52 sm:h-44 mb-40 sm:mb-44 bg-secondary-green">
+              <Newsletter />
+            </div>
+
+        </section> 
+    
+        {/* Events calendar ends here */}
+          
       </>
     );
   }

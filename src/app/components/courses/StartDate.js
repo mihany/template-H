@@ -55,11 +55,14 @@ export default function StartDate() {
     );
 
   return (
-    <section className="bg-secondary-green">
+    <section className="bg-secondary-darkCyan">
         <div className="sm:pt-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-4xl text-center">
-                <h2 className="text-base/7 font-semibold text-white">Start Now</h2>
+                {/* <h2 className="text-base/7 font-semibold bg-gradient-to-r from-secondary-robinEggBlue via-secondary-whiteSmoke to-secondary-robinEggBlue inline-block text-transparent bg-clip-text"> */}
+                <h2 className="text-base/7 font-semibold text-secondary-whiteSmoke">
+                    Start Now
+                </h2>
                 <h2 className="mt-2 text-5xl font-semibold tracking-tight text-balance text-white sm:text-6xl">Apply to the next bootcamp</h2>
                 {/* <p className="mt-2 text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-6xl">
                     Our Financing Plan Suits You
@@ -80,7 +83,7 @@ export default function StartDate() {
                         value={option.value}
                         className={({ checked }) =>
                         classNames(
-                            checked ? "bg-secondary-lightGreen text-white" : "text-white",
+                            checked ? "bg-secondary-whiteSmoke text-secondary-onyx" : "text-white",
                             "cursor-pointer rounded-full px-2.5 py-1"
                         )
                         }
@@ -93,19 +96,19 @@ export default function StartDate() {
 
                 {/* Dynamic Content */}
                 <div className="my-4 p-2 grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2 lg:grid-rows-1 md:grid-rows-1 sm:grid-rows-2 lg:gap-4 md:gap-4 sm:gap-2 gap-2">
-                    <div className="text-white border-l-4 p-4 border-secondary-lightGreen">
+                    <div className="text-white border-l-4 p-4 border-secondary-robinEggBlue">
                         <h3 className="text-xl font-semibold">The next cohort starts</h3>
                         <p className="text-base font-light">{selectedCohort.nextCohort}</p>
                     </div>
-                    <div className="text-white border-l-4 p-4 border-secondary-lightGreen">
+                    <div className="text-white border-l-4 p-4 border-secondary-robinEggBlue">
                         <h3 className="text-xl font-semibold">Deadline for applications</h3>
                         <p className="text-base font-light">{selectedCohort.deadlineApplication}</p>
                     </div>
-                    <div className="text-white border-l-4 p-4 border-secondary-lightGreen">
+                    <div className="text-white border-l-4 p-4 border-secondary-robinEggBlue">
                         <h3 className="text-xl font-semibold">Deadline for scholarships</h3>
                         <p className="text-base font-light">{selectedCohort.deadlineScholarship}</p>
                     </div>
-                    <div className="text-white border-l-4 p-4 border-secondary-lightGreen">
+                    <div className="text-white border-l-4 p-4 border-secondary-robinEggBlue">
                         <h3 className="text-xl font-semibold">Application deadline in</h3>
                         <p className="text-base font-light">{selectedCohort.countdownApplication}</p>
                     </div>
@@ -121,43 +124,61 @@ export default function StartDate() {
             </div>
         </div>
         
-        <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-5 lg:px-4">
-            <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
-            <div className="grid grid-cols-5 gap-8 items-center">
-    {/* Left Content */}
-    <div className="col-span-3">
-        <h2 className="text-4xl font-bold tracking-tight text-white">
-            Choose the learning schedule that suits you
-        </h2>
-        <p className="mt-4 text-white">
-            Whether you prefer an intensive full-time option or a flexible part-time format, our courses are tailored to you.
-        </p>
-        {/* <p className="mt-4 text-white">
-        <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-base font-semibold text-gray-600 ring-1 ring-gray-500/10 ring-inset">
-            {selectedCohort.schedule}
-        </span>
-        </p> */}
-        <p className="mt-4 text-white">
-            {selectedCohort.about}
-        </p>
-    </div>
+        {/* <div className="container px-6 m-auto">
+          <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
+            <div className="col-span-4 lg:col-span-8">
+                <h2 className="text-4xl font-bold tracking-tight text-white">
+                    Choose the learning schedule that suits you
+                </h2>
+                <p className="mt-4 text-white">
+                    Whether you prefer an intensive full-time option or a flexible part-time format, our courses are tailored to you.
+                </p>
+                <p className="mt-4 text-white">
+                    {selectedCohort.about}
+                </p>
+            </div>
 
-    {/* Right Content */}
-    <div className="col-start-5 flex items-center justify-center bg-secondary-lightGreen rounded-lg h-32 w-full">
-        <div className="flex flex-col-reverse gap-y-4">
-            <dt className="text-base/7 text-white">days a week</dt>
-            <dd className="text-5xl font-semibold tracking-tight text-white ">
-                {selectedCohort.daysWeek}
-            </dd>
-        </div>
-            {/* <p className="text-6xl font-bold text-white">
-                        3–7
-                    </p>
-                    <p className="text-lg font-medium text-white pl-4">
-                        months to graduate
-                    </p> */}
+            <div className="col-span-4 flex flex-col-reverse gap-y-4 text-right">
+                <dt className="text-base/7 text-white">days a week</dt>
+                <dd className="text-5xl font-semibold tracking-tight text-white ">
+                    {selectedCohort.daysWeek}
+                </dd>
+            </div>
+          </div>
+        </div> */}
+
+        <div className="container px-6 m-auto max-w-7xl">
+            <div className="flex flex-wrap gap-6 items-center">
+                {/* Left Section */}
+                <div className="flex-1">
+                    <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-white">
+                        Choose the learning schedule that suits you
+                    </h2>
+                </div>
+
+                {/* Right Section */}
+                <div className="flex flex-col-reverse gap-y-4 text-center">
+                    <dt className="text-base/7 text-white">days a week</dt>
+                    {/* <dd className="text-5xl font-semibold tracking-tight bg-gradient-to-r from-secondary-lightGreen via-secondary-aquaMarine to-secondary-lightGreen inline-block text-transparent bg-clip-text"> */}
+                    <dd className="text-5xl font-semibold text-secondary-whiteSmoke tracking-tight inline-block">
+                        {selectedCohort.daysWeek}
+                    </dd>
                 </div>
             </div>
+                
+            <p className="mt-4 text-white">
+                Whether you prefer an intensive full-time option or a flexible part-time format, our courses are tailored to you.
+            </p>
+            <p className="mt-4 text-white">
+                {selectedCohort.about}
+            </p>
+        </div>
+
+        <div className="mx-auto max-w-7xl sm:px-2 sm:py-5 lg:px-4">
+            <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
+            <div className="grid grid-cols-5 gap-8 items-center">
+    
+    </div>
             {/* <div className="max-w-3xl">
                 <h2 className="text-4xl font-bold tracking-tight text-white">
                     Choose the learning schedule that suits you
@@ -169,11 +190,11 @@ export default function StartDate() {
             {/* <div className="mt-16 grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3"> */}
 
             <h2 className="sr-only">Our perks</h2>
-            <div className="mx-auto max-w-7xl divide-y divide-secondary-lightGreen lg:flex lg:justify-center lg:divide-x lg:divide-y-0 lg:py-8 text-white">
+            <div className="mx-auto max-w-7xl divide-y divide-secondary-robinEggBlue lg:flex lg:justify-center lg:divide-x lg:divide-y-0 lg:py-8 text-white">
                 {selectedCohort.perks.map((perk, perkIdx) => (
                 <div key={perkIdx} className="py-8 lg:w-1/3 lg:flex-none lg:py-0">
                     <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8">
-                    <perk.icon aria-hidden="true" className="size-8 shrink-0 text-secondary-lightGreen" />
+                    <perk.icon aria-hidden="true" className="size-8 shrink-0 text-secondary-robinEggBlue" />
                     <div className="ml-4 flex flex-auto flex-col-reverse">
                         <h3 className="font-medium ">{perk.name}</h3>
                         <p className="text-sm ">{perk.description}</p>

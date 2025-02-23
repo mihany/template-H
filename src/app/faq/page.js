@@ -1,8 +1,9 @@
 "use client";
 
-// import { useState } from "react";
-import { useState, useEffect } from "react";
-import { CheckCircleIcon } from '@heroicons/react/20/solid'
+import { useState } from "react";
+// import { useState, useEffect } from "react";
+import { CheckCircleIcon } from '@heroicons/react/20/solid';
+import ContactProgramAdvisor from "@/app/components/ContactProgramAdvisor";
 
 const faqs = [
   {
@@ -62,63 +63,21 @@ export default function FAQ() {
     return acc;
   }, {});
 
-  const [currentContent, setCurrentContent] = useState(0);
-  const [isSliding, setIsSliding] = useState(false);
 
-  const contentList = [
-    "Welcome to Hoetzin! Build your tech career.",
-    "Learn Web Development and Data Science with us.",
-    "Join our Cyber Security Bootcamp today!",
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      handleNextContent();
-    }, 3000); // Change content every 3 seconds
-
-    return () => clearInterval(interval); // Cleanup on unmount
-  }, []);
-
-  const handleNextContent = () => {
-    setIsSliding(true);
-    setTimeout(() => {
-      setIsSliding(false);
-      setCurrentContent((prevContent) => (prevContent + 1) % contentList.length);
-    }, 500);
-  };
 
   return (
-    
-
-    <div className="bg-white">
-      <div className="relative w-full max-w-lg mx-auto">
-      <div className="relative h-48 overflow-hidden">
-        {contentList.map((content, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 flex items-center justify-center bg-indigo-600 text-white text-lg font-semibold transition-transform duration-500 ease-in-out ${
-              index === currentContent
-                ? isSliding
-                  ? "translate-y-full"
-                  : "translate-y-0"
-                : "translate-y-full"
-            }`}
-          >
-            {content}
-          </div>
-        ))}
-      </div>
-    </div>
+    <>
+    <div className="bg-secondary-robinEggBlue/5 text-secondary-onyx pb-8">
       <div className="mx-auto max-w-7xl px-6 py-14 sm:py-24 lg:px-8">
-        <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+        <h2 className="text-4xl font-semibold tracking-tight  sm:text-5xl">
           Frequently asked questions
         </h2>
-        <p className="mt-6 max-w-2xl text-base/7 text-gray-600">
+        <p className="mt-6 max-w-2xl text-base/7 text-secondary-onyx/80">
           Have a different question and can’t find the answer you’re looking
           for? Reach out to our support team by{" "}
           <a
             href="mailto:hello@hoetzin.com"
-            className="font-semibold text-secondary-lightGreen hover:text-secondary-lightGreen/80"
+            className="font-semibold text-secondary-robinEggBlue hover:text-secondary-robinEggBlue/80"
           >
             sending us an email
           </a>{" "}
@@ -134,14 +93,15 @@ export default function FAQ() {
             onClick={() => setSelectedCategory(category)}
             className={`inline-flex items-center gap-x-1.5 rounded-md px-2.5 py-1.5 text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
               selectedCategory === category
-                ? "bg-secondary-lightGreen text-white hover:bg-secondary-lightGreen/80 focus-visible:outline-secondary-lightGreen/60"
-                : "bg-white text-gray-700 border-gray-300 hover:bg-gray-100"
+                ? "bg-secondary-robinEggBlue text-white hover:bg-secondary-robinEggBlue/80 focus-visible:outline-secondary-robinEggBlue/60"
+                : "bg-white text-secondary-onyx/85 border-gray-300 hover:bg-gray-100"
             }`}
           >
             <CheckCircleIcon
               aria-hidden="true"
               className={`-ml-0.5 size-5 ${
-                selectedCategory === category ? "text-white" : "text-gray-400"
+                
+                selectedCategory === category ? "text-white" : "text-secondary-onyx/50"
               }`}
             />
             {category}
@@ -153,16 +113,16 @@ export default function FAQ() {
         <div className="mt-10">
           {Object.keys(groupedFAQs).map((category) => (
             <div key={category} className="mb-10">
-              <h3 className="mb-5 text-sm/7 font-semibold text-slate-700 border-b border-black/10">
+              <h3 className="mb-5 text-sm/7 font-semibold text-secondary-onyx/95 border-b border-black/10">
                 {category}
               </h3>
               <dl className="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10">
                 {groupedFAQs[category].map((faq) => (
                   <div key={faq.id}>
-                    <dt className="text-base/7 font-semibold text-gray-900">
+                    <dt className="text-base/7 font-semibold">
                       {faq.question}
                     </dt>
-                    <dd className="mt-2 text-base/7 text-gray-600">
+                    <dd className="mt-2 text-base/7 text-secondary-onyx/70">
                       {faq.answer}
                     </dd>
                   </div>
@@ -171,7 +131,12 @@ export default function FAQ() {
             </div>
           ))}
         </div>
+
       </div>
+
+        <ContactProgramAdvisor />
+        
     </div>
+    </>
   );
 }

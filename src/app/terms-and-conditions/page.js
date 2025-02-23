@@ -60,7 +60,7 @@ const sections = [
 
 export default function TermsAndConditions() {
   return (
-    <div className="max-w-7xl sm:px-6 lg:px-8 mx-auto">
+    <div className="max-w-7xl sm:px-6 lg:px-8 mx-auto text-secondary-onyx">
       <div className="flex flex-col md:flex-row bg-gray-100 min-h-screen">
         {/* Sticky Sidebar */}
         <div className="md:w-64 w-full bg-white shadow-lg p-4">
@@ -71,7 +71,7 @@ export default function TermsAndConditions() {
                 <li key={generateId(section.title)}>
                   <a
                     href={`#${generateId(section.title)}`}
-                    className="text-blue-500 hover:underline"
+                    className="text-secondary-darkCyan hover:underline"
                   >{`${index + 1}. ${section.title}`}</a>
                 </li>
               ))}

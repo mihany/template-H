@@ -27,27 +27,11 @@ import {
 } from "@heroicons/react/20/solid";
 
 
-// export default function Blog() {
-//   return (
-//     <div className="text-black">
-//       <h1>Hoetzin Blog</h1>
-//       <p>
-//         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
-//         tenetur eveniet sapiente maiores et officiis nam! Velit dolorum maxime
-//         rem aliquam veniam! Molestiae dolore placeat, voluptatum ad porro
-//         inventore asperiores!
-//       </p>
-
-//       <BootcampSection />
-//     </div>
-//   );
-// }
-
 const PopularBlogs = [
   {
     id: 1,
     title: "Boost your conversion rate",
-    href: "#",
+    href: "/blog/article",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
     imageUrl:
@@ -128,7 +112,7 @@ const posts = [
   },
   // More posts...
   {
-    id: 1,
+    id: 2,
     title: "Boost your conversion rate",
     href: "#",
     description:
@@ -139,7 +123,7 @@ const posts = [
     datetime: "2020-03-16",
     category: { title: "Marketing", href: "#" },
     author: {
-      name: "Omar Mohsen",
+      name: "Adam Alex",
       role: "Content Creator",
       href: "#",
       imageUrl:
@@ -152,13 +136,13 @@ const posts = [
 export default function Blog() {
   return (
     <>
-      <div className="bg-white py-16 sm:py-16">
+      <div className="bg-white text-secondary-onyx py-16 sm:py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-Prussian-Blue sm:text-4xl">
               Hoetzin Blogs
             </h2>
-            <p className="mt-2 text-lg leading-8 text-gray-600">
+            <p className="mt-2 text-lg font-light leading-8 text-secondary-onyx/80">
               Learn how to grow your business with our expert advice.
             </p>
           </div>
@@ -426,7 +410,7 @@ export default function Blog() {
               
       {/* For the most recent updates, promotional codes, and intriguing
       insights from the tech industry. */}
-      <Newsletter />
+      {/* <Newsletter /> */}
     </>
   );
 }
