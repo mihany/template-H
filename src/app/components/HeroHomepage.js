@@ -61,12 +61,12 @@ export default function HeroHomepage() {
                       <TypingEffect />
                       
 
-                      <a
-                        href="/courses"
+                      <Link
+                        href={`${process.env.NEXT_PUBLIC_BASE_PATH}/courses`}
                         className="rounded-md bg-secondary-orangeCTA px-4 py-3 text-base font-semibold text-white shadow-xs hover:bg-secondary-orangeCTA/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-orangeCTA/85"
                       >
                         Our Courses
-                      </a>
+                      </Link>
                       
                     </div>
                   </div>
