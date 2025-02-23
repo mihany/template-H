@@ -1,4 +1,4 @@
-export default function BentoGridHomepage() {
+export default function BentGridHomepage() {
     return (
         <>
           <div className="bg-secondary-robinEggBlue/10 py-8 sm:py-10">
