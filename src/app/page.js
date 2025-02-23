@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <HeroHomepage/>       {/* add here more content */}
-      
+      <BentGridHomepage />
 
       
       <BenefitsHomepage />
