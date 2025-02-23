@@ -78,7 +78,7 @@ export default function Header() {
             <span className="sr-only">Hoetzin</span>
             <Image
               className="fill-secondary-lightGreen"
-              src="/images/hoetzin-logo1.png"
+              src="/template-H/images/hoetzin-logo1.png"
               alt="Hoetzin logo"
               width={150}
               height={40}
