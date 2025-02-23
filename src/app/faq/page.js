@@ -68,7 +68,12 @@ export default function FAQ() {
   return (
     <>
     <div className="bg-secondary-robinEggBlue/5 text-secondary-onyx pb-8">
-      <div className="mx-auto max-w-7xl px-6 py-14 sm:py-24 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 py-14 sm:py-24 lg:px-8
+        bg-[length:16rem_10rem] sm:bg-[length:25rem_19rem] 
+        bg-[calc(100%+6rem)_0rem] sm:bg-[calc(100%+12rem)_3rem] md:bg-[calc(100%+11rem)_3rem] lg:bg-[calc(100%+0rem)_3rem]
+        bg-no-repeat 
+        bg-[url('/images/questions.svg')]
+      ">
         <h2 className="text-4xl font-semibold tracking-tight  sm:text-5xl">
           Frequently asked questions
         </h2>

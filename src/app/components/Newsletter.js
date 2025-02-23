@@ -7,8 +7,10 @@ return (
     <div className="max-[640px]:py-12 sm:py-12 md:py-20 lg:py-24 absolute z-10 inset-x-0 -bottom-24 mx-auto max-w-7xl  
     w-[calc(100%-1rem)] grid grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-8 lg:px-8
      bg-secondary-robinEggBlue text-secondary-whiteSmoke rounded-2xl shadow-lg
-     bg-[length:200px_100px] bg-[2rem_2rem] bg-no-repeat bg-[url('/images/flying-doves-group.png')]
-     bg-blend-overlay
+     bg-[length:18rem_9rem] sm:bg-[length:35rem_15rem] md:bg-[length:35rem_15rem]
+     bg-[4rem_4rem] sm:bg-[10rem_-1rem] md:bg-[10rem_3rem]
+     bg-no-repeat 
+     bg-[url('/images/paperplane.png')]
      ">
             
             <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-balance text-white sm:text-4xl lg:col-span-7">

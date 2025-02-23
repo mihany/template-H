@@ -21,7 +21,7 @@ const featuredPost = {
   export default function BlogAndEvent() {
     return (
       <div className="bg-secondary-robinEggBlue/10 text-secondary-onyx py-16">
-        <div className="mx-auto grid max-w-7xl mb-6 sm:mb-10 grid-cols-1 gap-x-8 gap-y-12 px-6 sm:gap-y-16 lg:grid-cols-2 lg:px-8">
+        <div className="mx-auto grid max-w-7xl mb-6 sm:mb-10 grid-cols-1 gap-x-8 gap-y-12 px-6 sm:gap-y-16 lg:grid-cols-2 lg:px-8 ">
           <article className="mx-auto w-full max-w-2xl lg:mx-0 lg:max-w-lg">
             <h2 className="font-bold text-3xl text-secondary-darkCyan mb-5">Ready To Build The Future?</h2>
             <time dateTime={featuredPost.datetime} className="block text-sm/6 text-secondary-onyx/70">

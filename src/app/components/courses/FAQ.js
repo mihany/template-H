@@ -2,10 +2,15 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
 import Newsletter from "@/app/components/Newsletter";
 
-export default function IncentivesForCoursePage(props){
+export default function FAQ(props){
     return(
         <>
-        <div className="bg-secondary-darkCyan">
+        <div className="bg-secondary-darkCyan
+            bg-[length:21rem_11rem] sm:bg-[length:26rem_14rem]
+            bg-[calc(100%-12rem)_3rem] sm:bg-[-10rem_1rem]
+            bg-no-repeat 
+            bg-[url('/images/questionsinmind.svg')]
+            ">
             <div className="mx-auto max-w-7xl px-6 lg:px-8 pt-20 sm:pt-32 lg:pt-20">
                 <h2 className="text-center">
                     <span className="mx-auto inline-flex items-center rounded-full bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-secondary-lightGreen ring-inset">

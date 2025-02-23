@@ -192,8 +192,15 @@ export default function AboutUs() {
       </div>
 
       {/* Values section */}
-      <section className="bg-secondary-darkCyan text-secondary-whiteSmoke">
-        <div className="mx-auto mt-8 max-w-7xl pt-14 pb-6 sm:pt-15 px-6 sm:mt-16 lg:px-8">
+      <section className="bg-secondary-darkCyan text-secondary-whiteSmoke
+          bg-[length:15rem_9rem] md:bg-[length:19rem_12rem] lg:md:bg-[length:23rem_14rem]
+          bg-[calc(100%+3rem)_-1rem] md:bg-[calc(100%+3rem)_0rem] lg:md:bg-[calc(100%-3rem)_3rem] xl:md:bg-[calc(100%-6rem)_3rem]
+          bg-no-repeat 
+          bg-[url('/images/values.svg')]
+      ">
+        <div className="mx-auto mt-8 max-w-7xl pt-20 pb-6 sm:pt-15 px-6 sm:mt-16 lg:px-8
+          
+          ">
           <div className="mx-auto max-w-3xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
               Our values

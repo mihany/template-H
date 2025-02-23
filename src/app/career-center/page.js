@@ -52,7 +52,12 @@ export default function CareerCenter() {
     return (
       <>
         {/* The start of hero section */}
-        <div className="bg-white py-6 sm:py-6 text-secondary-onyx">
+        <div className="bg-secondary-robinEggBlue/5 py-6 sm:py-6 text-secondary-onyx
+          bg-[length:23rem_17rem] sm:bg-[length:25rem_17rem] md:bg-[length:27rem_17rem]
+          bg-[calc(100%+8rem)_calc(100%+1rem)] sm:bg-[calc(100%+7rem)_calc(100%+1rem)] md:bg-[calc(100%+6rem)_calc(100%+1rem)] lg:bg-[calc(100%-9rem)_calc(100%+1rem)] xl:bg-[calc(100%-12rem)_calc(100%+1rem)]
+          bg-no-repeat 
+          bg-[url('/images/career-mentor.png')]
+          ">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0">
               <p className="text-base/7 font-semibold text-secondary-darkCyan">Get the help you need</p>
