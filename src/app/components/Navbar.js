@@ -37,24 +37,30 @@ const products = [
     description: "Get a better understanding where your traffic is coming from",
     href: "/courses/data-analytics-career-track",
     icon: ChartPieIcon,
+    status: ``,
   },
   {
     name: "Software Engineering Bootcamp",
     description: "Speak directly to your customers with our engagement tool",
     href: "/courses/software-engineering-career-track",
     icon: CursorArrowRaysIcon,
+    status: {
+      
+    },
   },
   {
     name: "Cyber Security Bootcamp",
     description: "Your customers’ data will be safe and secure",
     href: "/courses/cyber-security-career-track",
     icon: FingerPrintIcon,
+    status: ``,
   },
   {
     name: "Data Science Bootcamp",
     description: "Your customers’ data will be safe and secure",
     href: "/courses/data-science-career-track",
     icon: SquaresPlusIcon,
+    status: ``,
   },
 ];
 const callsToAction = [
@@ -68,7 +74,7 @@ export default function Header() {
 
   return (
     <>
-    <header className="relative isolate z-10 bg-secondary-robinEggBlue/10 text-secondary-onyx">
+    <header className="relative isolate z-10 bg-white text-secondary-onyx">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
@@ -78,7 +84,7 @@ export default function Header() {
             <span className="sr-only">Hoetzin</span>
             <Image
               className="fill-secondary-lightGreen"
-              src="/template-H/images/hoetzin-logo1.png"
+              src="/images/logo2.svg"
               alt="Hoetzin logo"
               width={150}
               height={40}
@@ -139,6 +145,13 @@ export default function Header() {
                       href={item.href}
                       className="mt-6 block font-semibold text-gray-900"
                     >
+                      <span className="inline-flex items-center gap-1 font-semibold rounded-full text-xs px-2.5 py-1 text-orange-400 bg-orange-100">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>
+                        Coming soon...
+                      </span>
+                      <br/>
                       {item.name}
                       <span className="absolute inset-0" />
                     </a>
@@ -150,7 +163,7 @@ export default function Header() {
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                   <div className="grid grid-cols-3 divide-x divide-gray-900/5 border-x border-gray-900/5">
                     {callsToAction.map((item) => (
-                      <Link
+                      <a
                         key={item.name}
                         href={item.href}
                         className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
@@ -160,7 +173,18 @@ export default function Header() {
                           className="size-5 flex-none text-gray-400"
                         />
                         {item.name}
-                      </Link>
+                      </a>
+                      // <Link
+                      //   key={item.name}
+                      //   href={item.href}
+                      //   className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
+                      // >
+                      //   <item.icon
+                      //     aria-hidden="true"
+                      //     className="size-5 flex-none text-gray-400"
+                      //   />
+                      //   {item.name}
+                      // </Link>
                     ))}
                   </div>
                 </div>
@@ -231,7 +255,12 @@ export default function Header() {
                         href={item.href}
                         className="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
                       >
-                        {item.name}
+                        {item.name}<span className="inline-flex items-center gap-1 font-semibold rounded-full text-xs px-2.5 py-1 text-orange-400 bg-orange-100">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>
+                        Coming soon...
+                      </span>
                       </DisclosureButton>
                     ))}
                   </DisclosurePanel>

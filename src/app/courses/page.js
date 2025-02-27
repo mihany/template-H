@@ -100,7 +100,7 @@ export const metadata = {
                 </p>
                 <a
                   href="#"
-                  className="mt-6 inline-block w-full rounded-md border border-transparent bg-gray-900 px-8 py-3 font-medium text-white hover:bg-gray-800 sm:w-auto"
+                  className="mt-6 inline-block w-full rounded-full border border-transparent bg-gray-900 px-8 py-3 font-medium text-white hover:bg-gray-800 sm:w-auto"
                 >
                   Find your new career
                 </a>

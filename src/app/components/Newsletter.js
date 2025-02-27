@@ -30,11 +30,11 @@ return (
                 required
                 placeholder="Enter your email"
                 autoComplete="email"
-                className="min-w-0 flex-auto rounded-md bg-secondary-whiteSmoke px-3.5 py-2 text-base text-secondary-onyx outline-1 -outline-offset-1 outline-white/10 placeholder:text-secondary-onyx/70 focus:outline-2 focus:-outline-offset-2 focus:outline-secondary-orangeCTA sm:text-sm/6"
+                className="min-w-0 flex-auto rounded-full bg-secondary-whiteSmoke px-3.5 py-2 text-base text-secondary-onyx outline-1 -outline-offset-1 outline-white/10 placeholder:text-secondary-onyx/70 focus:outline-2 focus:-outline-offset-2 focus:outline-secondary-orangeCTA sm:text-sm/6"
                 />
                 <button
                 type="submit"
-                className="flex-none rounded-md bg-secondary-orangeCTA px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-secondary-orangeCTA/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                className="flex-none rounded-full bg-secondary-orangeCTA px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-secondary-orangeCTA/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                 >
                 Subscribe
                 </button>

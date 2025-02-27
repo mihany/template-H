@@ -218,7 +218,7 @@ export default function SoftwareEngineeringCareerTrack() {
               </ul>
               <a
                 href="/apply"
-                className="rounded-md bg-white px-3 py-3 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-gray-50"
+                className="rounded-full bg-white px-3 py-3 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-gray-50"
                 >
                 Apply now
               </a>

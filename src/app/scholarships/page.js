@@ -47,12 +47,13 @@ const tabs = [
           'Access to exclusive mentorship opportunities with industry professionals.',
           'Priority consideration for career support services, including resume building, interview preparation, and job placement assistance.',
         ],
-        howitworks: [
-          '',
-          '',
-          '',
-          '',
-        ]
+        howitworks: {
+          step1: '',
+          step2: '',
+          step3: '',
+          step4: '',
+        }
+        
       },
     ],
   },
@@ -215,7 +216,7 @@ const faqs = [
     return (
       <>
       {/* Here the hero section starts */}
-      <div className="relative bg-secondary-green text-secondary-onyx">
+      <div className="relative bg-secondary-darkCyan text-secondary-onyx">
       <div className="relative h-80 overflow-hidden bg-secondary-lightGreen md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
         <img
           alt=""
@@ -241,17 +242,17 @@ const faqs = [
               y2="321.024"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#776FFF" />
-              <stop offset={1} stopColor="#FF4694" />
+              <stop stopColor="#776FFF"/>
+              <stop offset={1} stopColor="#FF4694"/>
             </linearGradient>
           </defs>
         </svg>
       </div>
       <div className="text-secondary-onyx relative mx-auto max-w-7xl py-24 sm:py-32 lg:px-8 lg:py-40">
         <div className="pl-6 pr-6 md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2 lg:pl-24 lg:pr-0 xl:pl-32">
-          <h2 className="text-base/7 font-semibold text-secondary-aquaMarine">Award winning support</h2>
+          <h2 className="text-base/7 font-semibold text-secondary-whiteSmoke">Award winning support</h2>
           <p className="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">We’re here to help</p>
-          <p className="mt-6 text-base/7 text-secondary-grey">
+          <p className="mt-6 text-base/7 text-white">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a
             scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat quisque ut interdum
             tincidunt duis.
@@ -259,7 +260,7 @@ const faqs = [
           <div className="mt-8">
             <a
               href="#scholarships_section"
-              className="inline-flex rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="inline-flex rounded-full bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               Explore our scholarships
             </a>

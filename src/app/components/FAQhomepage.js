@@ -24,7 +24,7 @@ export default function FAQhomepage(props){
                     <Disclosure key={faq.question} as="div" className="pt-6">
                         <dt>
                         <DisclosureButton className="group flex w-full items-start justify-between text-left text-white">
-                            <span className="text-base/7 font-semibold">{faq.question}</span>
+                            <span className="text-lg/7 font-semibold">{faq.question}</span>
                             <span className="ml-6 flex h-7 items-center">
                             <PlusSmallIcon aria-hidden="true" className="size-6 group-data-[open]:hidden" />
                             <MinusSmallIcon aria-hidden="true" className="size-6 group-[&:not([data-open])]:hidden" />
@@ -32,7 +32,7 @@ export default function FAQhomepage(props){
                         </DisclosureButton>
                         </dt>
                         <DisclosurePanel as="dd" className="mt-2 pr-12">
-                        <p className="text-base/7 text-white/90">{faq.answer}</p>
+                        <p className="text-lg/7 text-white/90">{faq.answer}</p>
                         </DisclosurePanel>
                     </Disclosure>
                     ))}

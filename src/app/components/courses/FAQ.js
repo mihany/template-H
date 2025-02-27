@@ -6,8 +6,8 @@ export default function FAQ(props){
     return(
         <>
         <div className="bg-secondary-darkCyan
-            bg-[length:21rem_11rem] sm:bg-[length:26rem_14rem]
-            bg-[calc(100%-12rem)_3rem] sm:bg-[-10rem_1rem]
+            bg-[length:21rem_11rem] sm:bg-[length:26rem_14rem] md:bg-[length:26rem_11rem]
+            bg-[calc(100%-12rem)_3rem] sm:bg-[-10rem_1rem] md:sm:bg-[calc(100%+5rem)_1rem]
             bg-no-repeat 
             bg-[url('/images/questionsinmind.svg')]
             ">

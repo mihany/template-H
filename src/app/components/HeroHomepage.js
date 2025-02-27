@@ -6,8 +6,14 @@ import Link from "next/link";
 export default function HeroHomepage() {
     return (
       <>
-      <div className="relative isolate  ">
-            <svg
+      <div className="relative isolate  
+           bg-secondary-robinEggBlue/5
+            bg-[length:100%_100%] 
+            bg-[4rem_4rem] 
+            bg-no-repeat 
+            bg-[url('/images/bg-pattern2.png')]
+              ">
+            {/* <svg
               className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
               aria-hidden="true"
             >
@@ -30,7 +36,7 @@ export default function HeroHomepage() {
                 />
               </svg>
               <rect width="100%" height="100%" strokeWidth={0} fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)" />
-            </svg>
+            </svg> */}
             <div
               className="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48"
               aria-hidden="true"
@@ -47,10 +53,12 @@ export default function HeroHomepage() {
               <div className="mx-auto max-w-7xl px-6 pb-16 pt-18 sm:pt-16 lg:px-8 lg:pt-6">
                 <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none">
                   <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                    <h1 className="text-4xl text-secondary-onyx font-bold tracking-tight sm:text-6xl pt-5 lg:pt-20">
-                      Unleash your <span className="text-secondary-orangeCTA text-decoration">Ambition</span>.
+                    <h1 className="text-3xl text-secondary-onyx font-bold tracking-tight sm:text-6xl pt-5 lg:pt-20">
+                      Transform Your <span className="text-secondary-darkCyan text-decoration">Future</span>.<br/>
+                      Break Into Tech With Confidence.
+                      {/* Unleash your <span className="text-secondary-darkCyan text-decoration">Ambition</span>.
                       <br/>
-                      Step into the world of Tech
+                      Step into the world of Tech */}
                     </h1>
                     {/* <p className="relative mt-6 text-2xl leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
                       Unlock Your Competitive Edge: One Word <br/>
@@ -62,8 +70,9 @@ export default function HeroHomepage() {
                       
 
                       <Link
-                        href={`${process.env.NEXT_PUBLIC_BASE_PATH}/courses`}
-                        className="rounded-md bg-secondary-orangeCTA px-4 py-3 text-base font-semibold text-white shadow-xs hover:bg-secondary-orangeCTA/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-orangeCTA/85"
+                        // href={`${process.env.NEXT_PUBLIC_BASE_PATH}/courses`}
+                        href="/courses"
+                        className="rounded-3xl bg-secondary-orangeCTA px-4 py-3 text-base font-semibold text-white shadow-xs hover:bg-secondary-orangeCTA/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-orangeCTA/85"
                       >
                         Our Courses
                       </Link>
@@ -76,9 +85,9 @@ export default function HeroHomepage() {
                         <img
                           src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
                           alt=""
-                          className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                          className="aspect-[2/3] w-full rounded-full bg-gray-900/5 object-cover shadow-lg"
                         />
-                        <div className="pointer-events-auto absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                        <div className="pointer-events-auto absolute inset-0 rounded-full ring-1 ring-inset ring-gray-900/10" />
                       </div>
                     </div>
                     <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
@@ -86,17 +95,17 @@ export default function HeroHomepage() {
                         <img
                           src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
                           alt=""
-                          className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                          className="aspect-[2/3] w-full rounded-full bg-gray-900/5 object-cover shadow-lg"
                         />
-                        <div className="pointer-events-auto absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                        <div className="pointer-events-auto absolute inset-0 rounded-full ring-1 ring-inset ring-gray-900/10" />
                       </div>
                       <div className="relative">
                         <img
                           src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
                           alt=""
-                          className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                          className="aspect-[2/3] w-full rounded-full bg-gray-900/5 object-cover shadow-lg"
                         />
-                        <div className="pointer-events-auto absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                        <div className="pointer-events-auto absolute inset-0 rounded-full ring-1 ring-inset ring-gray-900/10" />
                       </div>
                     </div>
                     <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
@@ -104,17 +113,17 @@ export default function HeroHomepage() {
                         <img
                           src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
                           alt=""
-                          className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                          className="aspect-[2/3] w-full rounded-full bg-gray-900/5 object-cover shadow-lg"
                         />
-                        <div className="pointer-events-auto absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                        <div className="pointer-events-auto absolute inset-0 rounded-full ring-1 ring-inset ring-gray-900/10" />
                       </div>
                       <div className="relative">
                         <img
                           src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
                           alt=""
-                          className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                          className="aspect-[2/3] w-full rounded-full bg-gray-900/5 object-cover shadow-lg"
                         />
-                        <div className="pointer-events-auto absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                        <div className="pointer-events-auto absolute inset-0 rounded-full ring-1 ring-inset ring-gray-900/10" />
                       </div>
                     </div>
                   </div>

@@ -45,7 +45,7 @@ export default function ContactProgramAdvisor() {
                 <li>
                   <a
                     href="/contact"
-                    className="inline-flex rounded-md bg-secondary-orangeCTA px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-secondary-robinEggBlue/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-robinEggBlue/85"
+                    className="inline-flex rounded-full bg-secondary-orangeCTA px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-secondary-orangeCTA/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-orangeCTA/85"
                   >
                     Get a call
                   </a>

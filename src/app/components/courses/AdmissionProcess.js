@@ -88,7 +88,7 @@ export default function AdmissionProcess() {
           <div className="mt-10 text-center">
             <a
               href="/apply"
-              className="inline-block rounded-md bg-secondary-orangeCTA px-6 py-3 text-sm font-semibold text-white shadow hover:bg-secondary-lightGreen/70 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-secondary-lightGreen"
+              className="inline-block rounded-full bg-secondary-orangeCTA px-6 py-3 text-sm font-semibold text-white shadow hover:bg-secondary-lightGreen/70 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-secondary-lightGreen"
             >
               Apply now
             </a>

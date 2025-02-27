@@ -24,9 +24,13 @@ export default {
           orangeBuff: '#CF9968',
           alloyOrange: '#C0682A',
           onyx: '#424242',
+          trial: '#c7b590',
+          trial2: '#b79565',
+          trial3: '#bbcdd6',
+          trial4: '#B9F0E7',
 
           // the old color palette
-          grey: '#F5F5F5',
+          grey: '#09AE73',
           lightGreenBG: '#D9F9D3',  // opacity in backgrounds should be less than or 80%
           lightGreen: '#48CFCB',
           green: '#229799',

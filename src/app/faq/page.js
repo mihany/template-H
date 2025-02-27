@@ -98,7 +98,7 @@ export default function FAQ() {
             onClick={() => setSelectedCategory(category)}
             className={`inline-flex items-center gap-x-1.5 rounded-md px-2.5 py-1.5 text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
               selectedCategory === category
-                ? "bg-secondary-robinEggBlue text-white hover:bg-secondary-robinEggBlue/80 focus-visible:outline-secondary-robinEggBlue/60"
+                ? "bg-secondary-orangeCTA text-white hover:bg-secondary-robinEggBlue/80 focus-visible:outline-secondary-robinEggBlue/60"
                 : "bg-white text-secondary-onyx/85 border-gray-300 hover:bg-gray-100"
             }`}
           >
