@@ -12,6 +12,7 @@ export default function CourseCards() {
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto px-6">
             {/* course 1: Software Engineering */}
           <div className="bg-white border rounded-xl shadow-md p-5 space-y-4">
+            <div className="flex justify-center sm:justify-start">
             <figure className="p-6 pb-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -32,6 +33,8 @@ export default function CourseCards() {
                 />
               </svg>
             </figure>
+            </div>
+            
 
             {/* Course Title */}
             <h3 className="text-lg font-semibold text-secondary-onyx">Software Engineering</h3>
@@ -61,17 +64,24 @@ export default function CourseCards() {
               </svg>
               Job Assistance
             </span>
-            </div>
+          </div>
             
   
             {/* Course Description */}
             <p className="text-sm text-secondary-onyx/70 line-clamp-3 min-h-[3.5rem] sm:min-h-[4rem]">Front-end, back-end, full-stack — write the code that will shape the future</p>
   
             {/* CTA Button */}
-            <div className="flex">
+            <div className="flex items-center">
             <Link 
             href="/courses/software-engineering-career-track"
-            className="mx-auto text-center w-full rounded-full bg-secondary-orangeCTA py-2 text-sm font-semibold text-white shadow hover:bg-secondary-orangeCTA/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-orangeCTA/60"
+            className="max-sm:hidden mx-auto text-right w-full text-base/6 font-semibold text-secondary-orangeCTA"
+            >
+              View Program <span aria-hidden="true">→</span>
+            </Link>
+
+            <Link 
+            href="/courses/software-engineering-career-track"
+            className="sm:hidden mx-auto text-center w-full rounded-full bg-secondary-orangeCTA py-2 text-sm font-semibold text-white shadow hover:bg-secondary-orangeCTA/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-orangeCTA/60"
             >
               View program
             </Link>
@@ -82,26 +92,28 @@ export default function CourseCards() {
             {/* course 2: Data Analytics */}
 
           <div className="bg-white border rounded-xl shadow-md p-5 space-y-4">
-            <figure className="p-6 pb-0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-12 h-12 mx-auto stroke-emerald-500"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="1"
-                role="graphics-symbol"
-                aria-labelledby="title-01 desc-01"
-              >
-                <title id="title-01">Icon title</title>
-                <desc id="desc-01">A more detailed description of the icon</desc>
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"
-                />
-              </svg>
-            </figure>
+            <div className="flex justify-center sm:justify-start">
+              <figure className="p-6 pb-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-12 h-12 mx-auto stroke-emerald-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                  role="graphics-symbol"
+                  aria-labelledby="title-01 desc-01"
+                >
+                  <title id="title-01">Icon title</title>
+                  <desc id="desc-01">A more detailed description of the icon</desc>
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"
+                  />
+                </svg>
+              </figure>
+            </div>
 
             {/* Course Title */}
             <h3 className="text-lg font-semibold text-secondary-onyx">Data Analytics</h3>
@@ -137,12 +149,19 @@ export default function CourseCards() {
   
             {/* Course Description */}
             <p className="text-sm text-secondary-onyx/70 line-clamp-3 min-h-[3.5rem] sm:min-h-[4rem]">Master big data to solve big business problems</p>
-  
+
             {/* CTA Button */}
-            <div className="flex">
+            <div className="flex items-center">
             <Link 
             href="/courses/data-analytics-career-track"
-            className="mx-auto text-center w-full rounded-full bg-secondary-orangeCTA py-2 text-sm font-semibold text-white shadow hover:bg-secondary-orangeCTA/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-orangeCTA/60"
+            className="max-sm:hidden mx-auto text-right w-full text-base/6 font-semibold text-secondary-orangeCTA"
+            >
+              View Program <span aria-hidden="true">→</span>
+            </Link>
+
+            <Link 
+            href="/courses/data-analytics-career-track"
+            className="sm:hidden mx-auto text-center w-full rounded-full bg-secondary-orangeCTA py-2 text-sm font-semibold text-white shadow hover:bg-secondary-orangeCTA/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-orangeCTA/60"
             >
               View program
             </Link>
@@ -153,26 +172,28 @@ export default function CourseCards() {
           {/* course 3: Cyber Security */}
 
           <div className="bg-white border rounded-xl shadow-md p-5 space-y-4">
-            <figure className="p-6 pb-0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-12 h-12 mx-auto stroke-emerald-500"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="1"
-                role="graphics-symbol"
-                aria-labelledby="title-01 desc-01"
-              >
-                <title id="title-01">Icon title</title>
-                <desc id="desc-01">A more detailed description of the icon</desc>
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"
-                />
-              </svg>
-            </figure>
+            <div className="flex justify-center sm:justify-start">
+              <figure className="p-6 pb-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-12 h-12 mx-auto stroke-emerald-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                  role="graphics-symbol"
+                  aria-labelledby="title-01 desc-01"
+                >
+                  <title id="title-01">Icon title</title>
+                  <desc id="desc-01">A more detailed description of the icon</desc>
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"
+                  />
+                </svg>
+              </figure>
+            </div>
 
             {/* Course Title */}
             <h3 className="text-lg font-semibold text-secondary-onyx">Cyber Security</h3>
@@ -208,12 +229,19 @@ export default function CourseCards() {
   
             {/* Course Description */}
             <p className="text-sm text-secondary-onyx/70 line-clamp-3 min-h-[3.5rem] sm:min-h-[4rem]">Master big data to solve big business problems</p>
-  
+
             {/* CTA Button */}
-            <div className="flex">
+            <div className="flex items-center">
             <Link 
             href="/courses/cyber-security-career-track"
-            className="mx-auto text-center w-full rounded-full bg-secondary-orangeCTA py-2 text-sm font-semibold text-white shadow hover:bg-secondary-orangeCTA/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-orangeCTA/60"
+            className="max-sm:hidden mx-auto text-right w-full text-base/6 font-semibold text-secondary-orangeCTA"
+            >
+              View Program <span aria-hidden="true">→</span>
+            </Link>
+
+            <Link 
+            href="/courses/cyber-security-career-track"
+            className="sm:hidden mx-auto text-center w-full rounded-full bg-secondary-orangeCTA py-2 text-sm font-semibold text-white shadow hover:bg-secondary-orangeCTA/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-orangeCTA/60"
             >
               View program
             </Link>
@@ -224,26 +252,28 @@ export default function CourseCards() {
           {/* course 4: Data Science */}
 
           <div className="bg-white border rounded-xl shadow-md p-5 space-y-4">
-            <figure className="p-6 pb-0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-12 h-12 mx-auto stroke-emerald-500"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="1"
-                role="graphics-symbol"
-                aria-labelledby="title-01 desc-01"
-              >
-                <title id="title-01">Icon title</title>
-                <desc id="desc-01">A more detailed description of the icon</desc>
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"
-                />
-              </svg>
-            </figure>
+            <div className="flex justify-center sm:justify-start">
+              <figure className="p-6 pb-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-12 h-12 mx-auto stroke-emerald-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                  role="graphics-symbol"
+                  aria-labelledby="title-01 desc-01"
+                >
+                  <title id="title-01">Icon title</title>
+                  <desc id="desc-01">A more detailed description of the icon</desc>
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"
+                  />
+                </svg>
+              </figure>
+            </div>
 
             {/* Course Title */}
             <h3 className="text-lg font-semibold text-secondary-onyx">Data Science</h3>
@@ -257,7 +287,7 @@ export default function CourseCards() {
               Coming soon...
             </span>
             <br/>
-            <span className="inline-flex items-center gap-1 font-semibold rounded-full px-2.5 py-1 bg-green-100 text-xs text-green-700">
+            <span className="inline-flex items gap-1 font-semibold rounded-full px-2.5 py-1 bg-green-100 text-xs text-green-700">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -281,15 +311,21 @@ export default function CourseCards() {
             <p className="text-sm text-secondary-onyx/70 line-clamp-3 min-h-[3.5rem] sm:min-h-[4rem]">Master big data to solve big business problems</p>
   
             {/* CTA Button */}
-            <div className="flex">
+            <div className="flex items-center">
             <Link 
             href="/courses/data-science-career-track"
-            className="mx-auto text-center w-full rounded-full bg-secondary-orangeCTA py-2 text-sm font-semibold text-white shadow hover:bg-secondary-orangeCTA/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-orangeCTA/60"
+            className="max-sm:hidden mx-auto text-right w-full text-base/6 font-semibold text-secondary-orangeCTA"
+            >
+              View Program <span aria-hidden="true">→</span>
+            </Link>
+
+            <Link 
+            href="/courses/data-science-career-track"
+            className="sm:hidden mx-auto text-center w-full rounded-full bg-secondary-orangeCTA py-2 text-sm font-semibold text-white shadow hover:bg-secondary-orangeCTA/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-orangeCTA/60"
             >
               View program
             </Link>
             </div>
-
           </div>
 
       </div>

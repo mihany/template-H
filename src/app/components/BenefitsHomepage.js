@@ -4,7 +4,7 @@ export default function BenefitsHomepage() {
     <div className="bg-secondary-darkCyan py-14 sm:py-16 text-secondary-onyx">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         {/* <h2 className="text-base/7 font-semibold text-secondary-robinEggBlue">Deploy faster</h2> */}
-        <h2 className="mt-2 max-w-lg text-4xl font-semibold tracking-tight text-pretty text-secondary-whiteSmoke sm:text-5xl">
+        <h2 className="text-center mt-2  text-4xl font-semibold tracking-tight text-pretty text-secondary-whiteSmoke sm:text-5xl">
           Everything you need to deploy your app
         </h2>
         <div className="mt-8 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">

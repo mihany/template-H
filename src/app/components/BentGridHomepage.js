@@ -131,7 +131,6 @@ export default function BentGridHomepage() {
               <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
             </div>
 
-
           </div>
         </div>
       </div>

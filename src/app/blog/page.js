@@ -139,8 +139,8 @@ export default function Blog() {
       <div className="bg-white text-secondary-onyx py-16 sm:py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-Prussian-Blue sm:text-4xl">
-              Hoetzin Blogs
+            <h2 className="text-3xl font-bold tracking-tight text-secondary-onyx sm:text-4xl">
+              <span className="text-secondary-darkCyan font-extrabold">Hoetzin</span> Blogs
             </h2>
             <p className="mt-2 text-lg font-light leading-8 text-secondary-onyx/80">
               Learn how to grow your business with our expert advice.
@@ -176,7 +176,7 @@ export default function Blog() {
                     </a>
                   </div>
                   <div className="group relative">
-                    <h3 className="mt-3 text-lg font-semibold leading-6 text-Prussian-Blue group-hover:text-gray-600">
+                    <h3 className="mt-3 text-lg font-semibold leading-6 text-secondary-darkCyan group-hover:text-secondary-darkCyan/80">
                       <a href={PopularBlog.href}>
                         <span className="absolute inset-0" />
                         {PopularBlog.title}

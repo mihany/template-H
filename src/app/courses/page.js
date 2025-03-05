@@ -128,7 +128,7 @@ export const metadata = {
                   </div>
                 </div>
                 <div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-secondary-darkCyan p-8 sm:flex-row-reverse sm:items-end lg:w-full lg:max-w-sm lg:flex-auto lg:flex-col lg:items-start lg:gap-y-44">
-                  <p className="flex-none text-3xl sm:text-5xl font-bold tracking-tight ">$8.9 billion</p>
+                  <p className="flex-none text-3xl sm:text-5xl font-bold tracking-tight text-center">$8.9 billion</p>
                   <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
                     <p className="text-lg font-semibold tracking-tight ">
                       We’re proud that our customers have made over $8 billion in total revenue.
@@ -175,8 +175,8 @@ export const metadata = {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-5">
                 <div className="col-span-2">
-                  <h2 className="text-base/7 font-semibold text-secondary-lightGreen">HOW WE HELP YOU</h2>
-                  <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty sm:text-5xl">
+                  <h2 className="text-base/7 font-semibold text-secondary-orangeCTA">HOW WE HELP YOU</h2>
+                  <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty sm:text-5xl text-secondary-darkCyan">
                   Hoetzin Circle: the personalized team behind your success story
                   </p>
                   <p className="mt-6 text-base/7 text-secondary-onyx/80">
@@ -188,8 +188,8 @@ export const metadata = {
                 </div>
                 <dl className="col-span-3 grid grid-cols-1 gap-x-8 gap-y-10 text-base/7 text-gray-600 sm:grid-cols-2 lg:gap-y-16">
                   {features.map((feature) => (
-                    <div key={feature.name} className="relative pl-9">
-                      <dt className="font-semibold ">
+                    <div key={feature.name} className="relative pl-9 ">
+                      <dt className="font-semibold text-secondary-darkCyan">
                         <svg className="absolute top-1 left-0 h-6 w-6 flex-none fill-white stroke-secondary-orangeCTA stroke-2" strokeLinecap="round" strokeLinejoin="round">
                           <circle cx="12" cy="12" r="11" />
                           <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
@@ -221,7 +221,7 @@ export const metadata = {
               {/* Table Header - Visible on Desktop */}
               <div className="hidden sm:grid grid-cols-3 text-secondary-onyx font-semibold text-center">
                 <div className="px-4 py-3">YouTube / Online Video Courses</div>
-                <div className="px-4 py-3 text-white bg-secondary-robinEggBlue">Hoetzin</div>
+                <div className="px-4 py-3 text-white bg-secondary-darkCyan/70">Hoetzin</div>
                 <div className="px-4 py-3">Other Bootcamps + Degree Programs</div>
               </div>
 
@@ -239,8 +239,8 @@ export const metadata = {
                     <div className="sm:hidden font-semibold text-lg pb-2">YouTube / Online Video Courses</div>
                     <div className="px-4 py-4 font-semibold sm:font-normal sm:bg-white">{row[0]}</div>
                     
-                    <div className="sm:hidden text-white bg-secondary-robinEggBlue font-semibold text-lg pt-4 pb-2">Hoetzin</div>
-                    <div className="px-4 py-4 text-white bg-secondary-robinEggBlue">{row[1]}</div>
+                    <div className="sm:hidden text-white bg-secondary-darkCyan font-semibold text-lg pt-4 pb-2">Hoetzin</div>
+                    <div className="px-4 py-4 text-white bg-secondary-darkCyan">{row[1]}</div>
                     
                     <div className="sm:hidden font-semibold text-lg pt-4 pb-2">Other Bootcamps + Degree Programs</div>
                     <div className="px-4 py-4 sm:bg-white">{row[2]}</div>
