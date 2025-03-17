@@ -21,9 +21,9 @@ export const metadata = {
 import { Fragment } from 'react'
 import { Disclosure, DisclosureButton, DisclosurePanel, Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline';
-import ContactProgramAdvisor from "@/app/components/ContactProgramAdvisor";
-import UpcomingCohort from "@/app/components/UpcomingCohort";
-import Newsletter from "@/app/components/Newsletter";
+import ContactProgramAdvisor from "../components/ContactProgramAdvisor";
+import UpcomingCohort from "../components/UpcomingCohort";
+import Newsletter from "../components/Newsletter";
 
 
 const tabs = [
@@ -47,12 +47,36 @@ const tabs = [
           'Access to exclusive mentorship opportunities with industry professionals.',
           'Priority consideration for career support services, including resume building, interview preparation, and job placement assistance.',
         ],
-        howitworks: {
-          step1: '',
-          step2: '',
-          step3: '',
-          step4: '',
-        }
+        howitworks: [
+          {
+            name: 'Application Form',
+            description:
+              'Complete the Hoetzin Diversity Scholarship application form, providing information about your background, financial need, and career goals.',
+            date: 'Start now',
+            dateTime: '2021-08',
+          },
+          {
+            name: 'Personal Statement',
+            description:
+              'Submit a 500-word essay detailing your commitment to diversity in tech, your career aspirations, and how this scholarship will help you achieve your goals.',
+            date: 'Prepare',
+            dateTime: '2021-12',
+          },
+          {
+            name: 'References',
+            description:
+              'Provide two professional or academic references who can speak to your qualifications and character.',
+            date: 'Contact your',
+            dateTime: '2022-02',
+          },
+          {
+            name: 'Interview',
+            description:
+              'Selected applicants may be invited for an interview to discuss their application in more detail.',
+            date: 'Let\'s have',
+            dateTime: '2022-12',
+          },
+        ]
         
       },
     ],
@@ -78,6 +102,36 @@ const tabs = [
           'Exclusive access to advanced mentorship opportunities with leading industry professionals.',
           'Priority consideration for career support services, including personalized career planning, resume building, and job placement assistance.',
         ],
+        howitworks: [
+          {
+            name: 'Application Form',
+            description:
+              'Complete the Hoetzin Merit Scholarship application form, providing detailed information about your academic achievements, professional experience, and career goals.',
+            date: 'Start now',
+            dateTime: '2021-08',
+          },
+          {
+            name: 'Personal Statement',
+            description:
+              'Submit a 500-word essay or video presentation outlining your accomplishments, potential, and how this scholarship will help you achieve your future aspirations.',
+            date: 'Prepare',
+            dateTime: '2021-12',
+          },
+          {
+            name: 'References',
+            description:
+              'Provide two professional or academic references who can attest to your qualifications and potential.',
+            date: 'Contact your',
+            dateTime: '2022-02',
+          },
+          {
+            name: 'Interview',
+            description:
+              'If applicable, submit a portfolio showcasing your work, projects, or any relevant contributions to your field.',
+            date: 'Let\'s have',
+            dateTime: '2022-12',
+          },
+        ]
       },
     ],
   },
@@ -101,6 +155,36 @@ const tabs = [
           'Access to flexible learning schedules, including part-time and self-paced options, to accommodate the demands of parenting.',
           'Career support services tailored for single mothers, including resume building, job search assistance, and networking opportunities with professionals in the tech industry.',
         ],
+        howitworks: [
+          {
+            name: 'Application Form',
+            description:
+              'Complete the Hoetzin “Rising Together” Scholarship application form, providing details about your background, family situation, and career goals.',
+            date: 'Start now',
+            dateTime: '2021-08',
+          },
+          {
+            name: 'Personal Statement',
+            description:
+              'Submit a 500-word essay describing your experience as a single mother, your interest in technology, and how this scholarship will help you achieve your educational and career aspirations.',
+            date: 'Prepare',
+            dateTime: '2021-12',
+          },
+          {
+            name: 'References',
+            description:
+              'Provide two references, preferably from professional or community contacts, who can attest to your determination, resilience, and potential in the tech field.',
+            date: 'Contact your',
+            dateTime: '2022-02',
+          },
+          {
+            name: 'Interview',
+            description:
+              'Selected applicants may be invited for an interview to discuss their application in more detail.',
+            date: 'Let\'s have',
+            dateTime: '2022-12',
+          },
+        ]
       },
     ],
   },
@@ -124,6 +208,36 @@ const tabs = [
           'Access to specialized career support services tailored for veterans, including resume building, job search assistance, and networking opportunities with tech professionals.',
           'Participation in veteran-focused mentorship programs that connect scholarship recipients with successful veterans in the tech industry.',
         ],
+        howitworks: [
+          {
+            name: 'Application Form',
+            description:
+              'Complete the Hoetzin Veterans Scholarship application form, providing details about your military service, tech career goals, and how this scholarship will help you transition into the tech industry.',
+            date: 'Start now',
+            dateTime: '2021-08',
+          },
+          {
+            name: 'Personal Statement',
+            description:
+              'Submit a 500-word essay describing your military experience, your interest in technology, and your plans for using the skills gained from the Bootcamp in your new career.',
+            date: 'Prepare',
+            dateTime: '2021-12',
+          },
+          {
+            name: 'References',
+            description:
+              'Provide two references, preferably from military or professional contacts, who can attest to your dedication, skills, and potential in the tech field.',
+            date: 'Contact your',
+            dateTime: '2022-02',
+          },
+          {
+            name: 'Interview',
+            description:
+              'Selected applicants may be invited for an interview to discuss their application in more detail.',
+            date: 'Let\'s have',
+            dateTime: '2022-12',
+          },
+        ]
       },
     ],
   },
@@ -147,6 +261,36 @@ const tabs = [
           'Access to exclusive mentorship opportunities with successful women in tech.',
           'Enhanced career support services, including networking opportunities, resume building, and interview preparation tailored to women.',
         ],
+        howitworks: [
+          {
+            name: 'Application Form',
+            description:
+              'Complete the Hoetzin Women Empowerment Scholarship application form, providing details about your background, challenges faced, and career aspirations.',
+            date: 'Start now',
+            dateTime: '2021-08',
+          },
+          {
+            name: 'Personal Statement',
+            description:
+              'Submit a 500-word essay detailing your journey, the obstacles you have overcome, and how this scholarship will help you achieve your goals in the tech industry.',
+            date: 'Prepare',
+            dateTime: '2021-12',
+          },
+          {
+            name: 'References',
+            description:
+              'Provide two professional or academic references who can speak to your determination, resilience, and potential in the tech field.',
+            date: 'Contact your',
+            dateTime: '2022-02',
+          },
+          {
+            name: 'Interview',
+            description:
+              'Selected applicants may be invited for an interview to discuss their application in more detail.',
+            date: 'Let\'s have',
+            dateTime: '2022-12',
+          },
+        ]
       },
     ],
   },
@@ -295,7 +439,7 @@ const faqs = [
                   {tabs.map((tab) => (
                     <Tab
                       key={tab.name}
-                      className="border-b-2 border-transparent py-6 text-sm font-medium whitespace-nowrap text-gray-500 hover:border-gray-300 hover:text-gray-700 data-selected:border-indigo-500 data-selected:text-indigo-600"
+                      className="border-b-2 border-transparent py-6 text-sm font-medium whitespace-nowrap text-gray-500 hover:border-gray-300 hover:text-gray-700 data-selected:border-indigo-500 data-selected:text-indigo-600 !outline-none !ring-0"
                     >
                       {tab.name}
                     </Tab>
@@ -308,6 +452,7 @@ const faqs = [
               {tabs.map((tab) => (
                 <TabPanel key={tab.name} className="space-y-16 pt-10 lg:pt-16">
                   {tab.features.map((feature) => (
+                    <>
                     <div key={feature.name} className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8">
                       <div className="mt-6 lg:col-span-6 lg:mt-0">
                         <h3 className="text-lg font-medium text-secondary-green">{feature.name}</h3>
@@ -345,11 +490,38 @@ const faqs = [
                       </div>
                       
                     </div>
-                    
-                  ))}
+                    <UpcomingCohort />
+                    <div  className="mx-auto max-w-7xl text-secondary-onyx">
+                    <h2 className="text-3xl font-bold tracking-tight  sm:text-4xl mb-4">
+                        How it works?
+                    </h2>
+                    <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden lg:mx-0 lg:max-w-none lg:grid-cols-4">
+                          {feature.howitworks.map((item) => (
+                            <div>
+                              <time dateTime={item.dateTime} className="flex items-center text-sm/6 font-semibold text-secondary-lightGreen">
+                                <svg viewBox="0 0 4 4" aria-hidden="true" className="mr-4 size-1 flex-none">
+                                  <circle r={2} cx={2} cy={2} fill="currentColor" />
+                                </svg>
+                                {item.date}
+                                <div
+                                  aria-hidden="true"
+                                  className="absolute -ml-2 h-px w-screen -translate-x-full bg-secondary-onyx/20 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0"
+                                />
+                              </time>
+                              <p className="mt-6 text-lg/8 font-semibold tracking-tight text-secondary-onyx">{item.name}</p>
+                              <p className="mt-1 text-base/7 text-secondary-onyx/80">{item.description}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                  </div>
+                  </>
+                  ))
+                  }
               {/* Here the Step-by-Step Application Process starts */}
-              <UpcomingCohort />
-              <div className="mx-auto max-w-7xl text-secondary-onyx">
+              {/* <UpcomingCohort /> */}
+              {/* <div className="mx-auto max-w-7xl text-secondary-onyx">
                 <h2 className="text-3xl font-bold tracking-tight  sm:text-4xl mb-4">
                     How it works?
                 </h2>
@@ -373,7 +545,7 @@ const faqs = [
                       ))}
                     </div>
                   </div>
-              </div>
+              </div> */}
               {/* Here the Step-by-Step Application Process starts */}
                 </TabPanel>
               ))}
@@ -420,7 +592,7 @@ const faqs = [
                 </div>
             </div>
             <div className="relative h-44 mb-40 sm:mb-44 bg-secondary-green">
-              <Newsletter />
+              <Newsletter firstline="Ready to accelerate your career?" secondline="Apply now"/>
               
             </div>
             

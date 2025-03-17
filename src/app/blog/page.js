@@ -18,7 +18,7 @@ export const metadata = {
     },
   };
 
-import Newsletter from "@/app/components/Newsletter"
+import Newsletter from "../components/Newsletter"
 import { ArrowLongLeftIcon, ArrowLongRightIcon } from '@heroicons/react/20/solid'
 import {
   BarsArrowUpIcon,
@@ -140,7 +140,10 @@ export default function Blog() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-secondary-onyx sm:text-4xl">
-              <span className="text-secondary-darkCyan font-extrabold">Hoetzin</span> Blogs
+              <span className="text-secondary-darkCyan font-extrabold">
+                
+                Hoetzin
+                </span> Blogs
             </h2>
             <p className="mt-2 text-lg font-light leading-8 text-secondary-onyx/80">
               Learn how to grow your business with our expert advice.

@@ -3,13 +3,14 @@ import { ChevronRightIcon, HomeIcon } from '@heroicons/react/20/solid';
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline';
 import { CheckIcon } from "@heroicons/react/20/solid";
-import Overview from "@/app/components/courses/Overview";
-import AdmissionProcess from "@/app/components/courses/AdmissionProcess";
-import JobLanding from "@/app/components/courses/JobLanding";
-import Financing from "@/app/components/courses/Financing";
-import StartDate from "@/app/components/courses/StartDate";
-import FAQ from "@/app/components/courses/FAQ";
-import Curriculum from "@/app/components/courses/Curriculum";
+import Overview from "../../components/courses/Overview";
+import AdmissionProcess from "../../components/courses/AdmissionProcess";
+import JobLanding from "../../components/courses/JobLanding";
+import Financing from "../../components/courses/Financing";
+import StartDate from "../../components/courses/StartDate";
+import FAQ from "../../components/courses/FAQ";
+import Curriculum from "../../components/courses/Curriculum";
+
 import Link from 'next/link';
 
 export const metadata = {
@@ -220,7 +221,7 @@ export default function SoftwareEngineeringCareerTrack() {
                 href="/apply"
                 className="rounded-full bg-white px-3 py-3 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-gray-50"
                 >
-                Apply now
+                Start now 🚀
               </a>
               {/* <button
                 type="button"

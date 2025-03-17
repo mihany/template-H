@@ -1,3 +1,6 @@
+
+import ModalHowitworks from "./ModalHowitworks";
+
 export default function AdmissionProcess() {
     const steps = [
       {
@@ -27,21 +30,23 @@ export default function AdmissionProcess() {
     ];
   
     return (
-      <div className="bg-secondary-robinEggBlue/10 text-secondary-onyx py-16 sm:py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="bg-secondary-robinEggBlue/5 text-secondary-onyx">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 pb-10">
           {/* Heading */}
           <div className="text-center">
             <h3 className="text-sm font-semibold uppercase tracking-wide text-secondary-onyx">
               Admission
             </h3>
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
-              How to apply to our Web Development bootcamp
+              How to apply to Hoetzin Bootcamp
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-lg text-secondary-onyx/80">
               Our admission process is beginner-friendly and will give you a taste of our course. Start now!
             </p>
           </div>
-  
+          <div className="mt-3 flex items-center justify-center">
+            <ModalHowitworks />
+          </div>
           {/* Steps */}
           <div className="mt-16 flex items-center justify-center">
             <div className="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-5 lg:grid-cols-4 lg:gap-x-6 relative">
@@ -88,7 +93,7 @@ export default function AdmissionProcess() {
           <div className="mt-10 text-center">
             <a
               href="/apply"
-              className="inline-block rounded-full bg-secondary-orangeCTA px-6 py-3 text-sm font-semibold text-white shadow hover:bg-secondary-lightGreen/70 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-secondary-lightGreen"
+              className="inline-block rounded-full bg-secondary-orangeCTA px-6 py-3 text-sm font-semibold text-white shadow hover:bg-secondary-orangeCTA/90 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-secondary-orangeCTA"
             >
               Apply now
             </a>

@@ -1,5 +1,5 @@
-import Flipper from "@/app/components/Flipper";
-import TypingEffect from "@/app/components/TypingEffect";
+import Flipper from "../components/Flipper";
+import TypingEffect from "../components/TypingEffect";
 import Link from "next/link";
 
 
@@ -54,6 +54,7 @@ export default function HeroHomepage() {
                 <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none">
                   <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                     <h1 className="text-3xl text-secondary-onyx font-bold tracking-tight sm:text-6xl pt-5 lg:pt-20">
+                      
                       Transform Your <span className="text-secondary-darkCyan text-decoration">Future</span>.<br/>
                       Break Into Tech With Confidence.
                       {/* Unleash your <span className="text-secondary-darkCyan text-decoration">Ambition</span>.
@@ -71,10 +72,10 @@ export default function HeroHomepage() {
 
                       <Link
                         // href={`${process.env.NEXT_PUBLIC_BASE_PATH}/courses`}
-                        href="/courses"
+                        href="/apply"
                         className="rounded-3xl bg-secondary-orangeCTA px-4 py-3 text-base font-semibold text-white shadow-xs hover:bg-secondary-orangeCTA/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-orangeCTA/85"
                       >
-                        Our Courses
+                        Start Now
                       </Link>
                       
                     </div>

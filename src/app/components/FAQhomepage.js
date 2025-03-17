@@ -31,8 +31,11 @@ export default function FAQhomepage(props){
                             </span>
                         </DisclosureButton>
                         </dt>
-                        <DisclosurePanel as="dd" className="mt-2 pr-12">
-                        <p className="text-lg/7 text-white/90">{faq.answer}</p>
+                        <DisclosurePanel as="dd" className="mt-2 px-2">
+                        {/* <p className="text-lg/7 text-white/90">{faq.answer}</p> */}
+                        <div
+                            dangerouslySetInnerHTML={{ __html: faq.content }}
+                        ></div>
                         </DisclosurePanel>
                     </Disclosure>
                     ))}

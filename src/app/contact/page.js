@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ContactCard from "../components/ContactCard";
 
 export const metadata = {
   title: "Contact Us - Hoetzin",
@@ -73,81 +74,12 @@ export default function Contact() {
                 />
               </svg>
             </div>
-            <h2 className="text-pretty text-4xl font-semibold tracking-tight sm:text-5xl">
+            <h2 className="text-pretty my-3 text-4xl font-semibold tracking-tight sm:text-5xl">
               Get in touch
             </h2>
-            <div className="flex items-center gap-x-6 mt-6">
-              <Image
-                width="100"
-                height="100" /* to be edited later */
-                alt=""
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                className="size-16 rounded-full"
-              />
-              <div>
-                <h3 className="text-base/7 font-semibold tracking-tight">
-                  Adam Smith
-                </h3>
-                <p className="text-sm/6 font-normal">
-                  Program Advisor <span className="text-secondary-darkCyan font-semibold">@Hoetzin</span>
-                </p>
-              </div>
-            </div>
-            {/* <p className="mt-6 text-lg/8 text-gray-600">
-              Proin volutpat consequat porttitor cras nullam gravida at. Orci
-              molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
-              Arcu sed malesuada et magna.
-            </p> */}
-            <dl className="mt-8 sm:mt-6 space-y-4 text-base/7 text-secondary-onyx/70">
-              {/* <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <span className="sr-only">Address</span>
-                  <BuildingOffice2Icon
-                    aria-hidden="true"
-                    className="h-7 w-6 text-secondary-onyx/50"
-                  />
-                </dt>
-                <dd>
-                  545 Mavis Island
-                  <br />
-                  Chicago, IL 99191
-                </dd>
-              </div> */}
-              <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <span className="sr-only">Telephone</span>
-                  <PhoneIcon
-                    aria-hidden="true"
-                    className="h-7 w-6 text-secondary-onyx/50"
-                  />
-                </dt>
-                <dd>
-                  <a
-                    href="tel:+1 (555) 234-5678"
-                    className="hover:text-secondary-onyx/90"
-                  >
-                    +1 (555) 234-5678
-                  </a>
-                </dd>
-              </div>
-              <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <span className="sr-only">Email</span>
-                  <EnvelopeIcon
-                    aria-hidden="true"
-                    className="h-7 w-6 text-secondary-onyx/50"
-                  />
-                </dt>
-                <dd>
-                  <a
-                    href="mailto:hello@hoetzin.com"
-                    className="hover:text-secondary-onyx/90"
-                  >
-                    hello@hoetzin.com
-                  </a>
-                </dd>
-              </div>
-            </dl>
+
+            <ContactCard />
+              
           </div>
           
           <div className="relative flex py-5 items-center">
@@ -166,6 +98,7 @@ export default function Contact() {
             </a>
 
           </div>
+
         </div>
         <div className="px-6 pb-24 pt-6 sm:pt-8 lg:py-20 sm:pb-32 lg:px-8">
           
@@ -189,7 +122,7 @@ export default function Contact() {
                     name="first-name"
                     type="text"
                     autoComplete="given-name"
-                    className="block w-full rounded-full bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                    className="block w-full rounded-full bg-white px-3.5 py-2 text-base text-secondary-onyx outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-secondary-darkCyan"
                   />
                 </div>
               </div>
@@ -206,7 +139,7 @@ export default function Contact() {
                     name="last-name"
                     type="text"
                     autoComplete="family-name"
-                    className="block w-full rounded-full bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                    className="block w-full rounded-full bg-white px-3.5 py-2 text-base text-secondary-onyx outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-secondary-darkCyan"
                   />
                 </div>
               </div>
@@ -223,7 +156,7 @@ export default function Contact() {
                     name="email"
                     type="email"
                     autoComplete="email"
-                    className="block w-full rounded-full bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                    className="block w-full rounded-full bg-white px-3.5 py-2 text-base text-secondary-onyx outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-secondary-darkCyan"
                   />
                 </div>
               </div>
@@ -240,7 +173,7 @@ export default function Contact() {
                     name="phone-number"
                     type="tel"
                     autoComplete="tel"
-                    className="block w-full rounded-full bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                    className="block w-full rounded-full bg-white px-3.5 py-2 text-base text-secondary-onyx outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-secondary-darkCyan"
                   />
                 </div>
               </div>
@@ -256,7 +189,7 @@ export default function Contact() {
                     id="message"
                     name="message"
                     rows={4}
-                    className="block w-full rounded-lg bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                    className="block w-full rounded-lg bg-white px-3.5 py-2 text-base text-secondary-onyx outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-secondary-darkCyan"
                     defaultValue={""}
                   />
                 </div>

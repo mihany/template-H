@@ -53,7 +53,7 @@ export default function Accessibility() {
         suggestions on how we can improve, please contact us:
       </p>
       <ul className="list-none text-secondary-onyx/80 mb-8 space-y-2">
-        <li>Email: <a href="mailto:support@hoetzin.com" className="text-secondary-lightGreen hover:underline">support@hoetzin.com</a></li>
+        <li>Email: <a href="mailto:support@hoetzin.com" className="text-secondary-darkCyan hover:underline">support@hoetzin.com</a></li>
         <li>Phone: (123) 456-7890</li>
       </ul>
 

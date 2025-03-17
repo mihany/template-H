@@ -18,7 +18,7 @@ export const metadata = {
     },
   };
 
-import Newsletter from "@/app/components/Newsletter"
+import Newsletter from "../components/Newsletter"
 
 const incentives = [
   {
@@ -284,12 +284,12 @@ export default function CareerCenter() {
                 Check career workshop events
               </h2>
               <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:shrink-0">
-                <a
+                {/* <a
                   href="/events-at-hoetzin"
                   className="rounded-md bg-secondary-orangeCTA px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-secondary-orangeCTA focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline--secondary-orangeCTA"
                 >
                   Get started
-                </a>
+                </a> */}
                 <a href="/events-at-hoetzin" className="text-sm/6 font-semibold">
                   Apply to a bootcamp <span aria-hidden="true">→</span>
                 </a>
@@ -300,7 +300,7 @@ export default function CareerCenter() {
 
       {/* The start of newsletter section */}
       <div className="relative h-64 sm:h-56 md:h-72 mb-40 sm:mb-44 bg-secondary-green">
-          <Newsletter />
+          <Newsletter firstline="Ready to accelerate your career?" secondline="Apply now"/>
       </div>
       {/* The end of newsletter section */}
       </>

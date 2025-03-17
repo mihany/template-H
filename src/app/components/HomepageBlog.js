@@ -1,48 +1,48 @@
-import ContactProgramAdvisor from "@/app/components/ContactProgramAdvisor";
+import ContactProgramAdvisor from "../components/ContactProgramAdvisor";
 
 const posts = [
     {
       id: 1,
-      title: 'Boost your conversion rate',
+      title: 'How to Launch a Tech Career in 2025 Without a Computer Science Degree',
       href: '/blog',
       description:
         'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
       date: 'Mar 16, 2020',
       datetime: '2020-03-16',
       category: { title: 'Marketing', href: '#' },
-      imageUrl: "https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       status: "New posting",
     },
     // More posts...
     {
         id: 2,
-        title: 'Boost your conversion rate',
+        title: 'The Truth About Coding Bootcamps: Are They Really Worth It?',
         href: '/blog',
         description:
           'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
         date: 'Mar 16, 2020',
         datetime: '2020-03-16',
         category: { title: 'Marketing', href: '#' },
-        imageUrl: "https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        imageUrl: "https://images.unsplash.com/photo-1521106581851-da5b6457f674?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         status: "Top read this week",
       },
       {
         id: 3,
-        title: 'Boost your conversion rate',
+        title: 'No Tech Experience? No Problem! How to Prepare for a Coding Bootcamp',
         href: '/bolg',
         description:
           'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
         date: 'Mar 16, 2020',
         datetime: '2020-03-16',
         category: { title: 'Marketing', href: '#' },
-        imageUrl: "https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        imageUrl: "https://images.unsplash.com/photo-1613909207039-6b173b755cc1?q=80&w=2147&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         status: "Top read this month",
       },
   ]
   
   export default function HomepageBlog() {
     return (
-      <div className="bg-secondary-robinEggBlue/10 text-secondary-onyx py-24 sm:py-32">
+      <div className="bg-secondary-robinEggBlue/10 text-secondary-onyx pb-24 sm:pb-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-4xl font-semibold tracking-tight text-pretty sm:text-5xl">From Hoetzin's blog</h2>

@@ -2,13 +2,13 @@ import Image from "next/image";
 import { ChevronRightIcon, HomeIcon } from '@heroicons/react/20/solid'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
-import Overview from "@/app/components/courses/Overview";
-import AdmissionProcess from "@/app/components/courses/AdmissionProcess";
-import JobLanding from "@/app/components/courses/JobLanding";
-import Financing from "@/app/components/courses/Financing";
-import StartDate from "@/app/components/courses/StartDate";
-import FAQ from "@/app/components/courses/FAQ"
-import Curriculum from "@/app/components/courses/Curriculum"
+import Overview from "../../components/courses/Overview";
+import AdmissionProcess from "../../components/courses/AdmissionProcess";
+import JobLanding from "../../components/courses/JobLanding";
+import Financing from "../../components/courses/Financing";
+import StartDate from "../../components/courses/StartDate";
+import FAQ from "../../components/courses/FAQ"
+import Curriculum from "../../components/courses/Curriculum"
 
 
 const links = [

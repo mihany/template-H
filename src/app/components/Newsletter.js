@@ -1,5 +1,5 @@
 
-export default function Newsletter() {
+export default function Newsletter(props) {
 return (
     <>
     {/* md:w-full */}
@@ -10,13 +10,13 @@ return (
      bg-[length:18rem_9rem] sm:bg-[length:35rem_15rem] md:bg-[length:35rem_15rem]
      bg-[4rem_4rem] sm:bg-[10rem_-1rem] md:bg-[10rem_3rem]
      bg-no-repeat 
-     bg-[url('/images/paperplane.png')]
+     bg-[url('/images/paperplane.svg')]
      ">
             
             <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-balance text-white sm:text-4xl lg:col-span-7">
-            Ready to accelerate your career? 
+            {props.firstline}
             <br /> 
-            Apply now
+            {props.secondline}
             </h2>
             <form className="w-full max-w-md lg:col-span-5 lg:pt-2">
             <div className="flex gap-x-4">

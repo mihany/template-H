@@ -5,12 +5,12 @@ export default function Banner() {
     // rounded-lg
     <div className="relative isolate flex items-center px-6 py-4 sm:px-3.5 bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-600 shadow-lg  animate-shimmer">
       {/* Shine Effect */}
-      <div className="absolute inset-0 overflow-hidden rounded-lg">
+      <div className="absolute -z-20  inset-0 overflow-hidden rounded-lg">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 animate-glow"></div>
       </div>
 
       {/* Banner Content - Left on Mobile, Centered on Desktop */}
-      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-start sm:justify-center gap-x-6 gap-y-2 z-10 w-full">
+      <div className="z-10 max-w-7xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-start sm:justify-center gap-x-6 gap-y-2 w-full">
         <p className="text-sm text-yellow-900 font-semibold">
           <strong className="font-bold">Golden Bootcamp</strong>
           <svg viewBox="0 0 2 2" aria-hidden="true" className="mx-2 inline size-0.5 fill-current">

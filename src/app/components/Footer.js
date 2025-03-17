@@ -13,6 +13,7 @@ const navigation = {
     { name: "Events", href: "/events-at-hoetzin" },
     { name: "Career Center", href: "/career-center" },
     { name: "Scholarships", href: "/scholarships" },
+    { name: "Apply", href: "/apply" },
   ],
   company: [
     { name: "Accessibility", href: "/accessibility" },
@@ -97,14 +98,22 @@ export default function Footer() {
     <footer className="bg-secondary-onyx">
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-8">
+          <div className="space-y-4">
+            {/* <img src="/logo-black.svg" alt="Company Logo" className="w-32 h-auto" /> */}
             <Image
+              src="/images/logo-white.svg"
+              alt="Hoetzin logo"
+              width={180}
+              height={40}
+              priority={true} // Preloads the image for better performance
+            />
+            {/* <Image
               src="/images/hoetzin-logo2.png"
               alt="Hoetzin logo"
               width={150}
               height={40}
               priority={true} // Preloads the image for better performance
-            />
+            /> */}
             {/* <img
               alt="Company name"
               src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"

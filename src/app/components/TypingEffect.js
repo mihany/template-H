@@ -49,8 +49,8 @@ export default function TypingEffect() {
 
   return (
     <div className="w-full h-20 sm:h-32 text-xl sm:text-2xl font-mono">
-      <span >{currentText}</span>
-      <span className="animate-blink">|</span>
+      <h1><span >{currentText}</span>
+      <span className="animate-blink">|</span></h1>
     </div>
   );
 }

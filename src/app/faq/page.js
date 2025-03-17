@@ -3,44 +3,91 @@
 import { useState } from "react";
 // import { useState, useEffect } from "react";
 import { CheckCircleIcon } from '@heroicons/react/20/solid';
-import ContactProgramAdvisor from "@/app/components/ContactProgramAdvisor";
+import ContactProgramAdvisor from "../components/ContactProgramAdvisor";
+
 
 const faqs = [
   {
     category: "General",
-    id: 1,
-    question: "Why to Join a Bootcamp?",
-    answer: "Quas cupiditate laboriosam fugiat. Quas cupiditate laboriosam fugiat.",
+    question: "Are Hoetzin bootcamps 100% online?",
+    answer: `
+                <p class="text-base/7">
+                Yes, all of Hoetzin’s courses are 100% online and live, led by expert instructors and TAs. 
+                You won’t be learning alone—our structured live sessions provide real-time support from mentors, career coaches, and program advisors. 
+                <br/>
+                Plus, you’ll connect with a community of ambitious students, growing and supporting each other throughout your journey.
+                </p>
+            `,
   },
   {
     category: "General",
-    id: 2,
     question: "Why are Bootcamps better than self-paced courses?",
-    answer: "Quas cupiditate laboriosam fugiat.",
+    answer: `
+                <p class="text-base/7">
+                Yes, all of Hoetzin’s courses are 100% online and live, led by expert instructors and TAs. 
+                You won’t be learning alone—our structured live sessions provide real-time support from mentors, career coaches, and program advisors. 
+                <br/>
+                Plus, you’ll connect with a community of ambitious students, growing and supporting each other throughout your journey.
+                </p>
+            `,
   },
   {
     category: "Scholarships",
-    id: 3,
+    question: "I’ve heard you offer scholarships. ‍Where do I apply?",
+    answer: `
+                <p class="text-base/7">
+                
+                </p>
+                <p>Learn more about our <a href="/scholarships" class="font-bold underline">Hoetzin scholarships</a>.</p>
+            `,
+  },
+  {
+    category: "Scholarships",
     question: "What is the time commitment required?",
-    answer: "Quas cupiditate laboriosam fugiat.",
+    answer: `
+                <p class="text-base/7">
+                Yes, all of Hoetzin’s courses are 100% online and live, led by expert instructors and TAs. 
+                You won’t be learning alone—our structured live sessions provide real-time support from mentors, career coaches, and program advisors. 
+                <br/>
+                Plus, you’ll connect with a community of ambitious students, growing and supporting each other throughout your journey.
+                </p>
+            `,
   },
   {
     category: "Finance",
-    id: 4,
     question: "What if I cannot afford the Bootcamp?",
-    answer: "Quas cupiditate laboriosam fugiat.",
+    answer: `
+                <p class="text-base/7">
+                Yes, all of Hoetzin’s courses are 100% online and live, led by expert instructors and TAs. 
+                You won’t be learning alone—our structured live sessions provide real-time support from mentors, career coaches, and program advisors. 
+                <br/>
+                Plus, you’ll connect with a community of ambitious students, growing and supporting each other throughout your journey.
+                </p>
+            `,
   },
   {
     category: "Finance",
-    id: 5,
     question: "How do payment plans work?",
-    answer: "Quas cupiditate laboriosam fugiat.",
+    answer: `
+                <p class="text-base/7">
+                Yes, all of Hoetzin’s courses are 100% online and live, led by expert instructors and TAs. 
+                You won’t be learning alone—our structured live sessions provide real-time support from mentors, career coaches, and program advisors. 
+                <br/>
+                Plus, you’ll connect with a community of ambitious students, growing and supporting each other throughout your journey.
+                </p>
+            `,
   },
   {
     category: "General",
-    id: 6,
     question: "How do payment plans work?",
-    answer: "Quas cupiditate laboriosam fugiat.",
+    answer: `
+                <p class="text-base/7">
+                Yes, all of Hoetzin’s courses are 100% online and live, led by expert instructors and TAs. 
+                You won’t be learning alone—our structured live sessions provide real-time support from mentors, career coaches, and program advisors. 
+                <br/>
+                Plus, you’ll connect with a community of ambitious students, growing and supporting each other throughout your journey.
+                </p>
+            `,
   },
 ];
 
@@ -98,7 +145,7 @@ export default function FAQ() {
             onClick={() => setSelectedCategory(category)}
             className={`inline-flex items-center gap-x-1.5 rounded-md px-2.5 py-1.5 text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
               selectedCategory === category
-                ? "bg-secondary-orangeCTA text-white hover:bg-secondary-robinEggBlue/80 focus-visible:outline-secondary-robinEggBlue/60"
+                ? "bg-secondary-orangeCTA text-white hover:bg-secondary-orangeCTA/80 focus-visible:outline-secondary-orangeCTA/60"
                 : "bg-white text-secondary-onyx/85 border-gray-300 hover:bg-gray-100"
             }`}
           >
@@ -123,12 +170,15 @@ export default function FAQ() {
               </h3>
               <dl className="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10">
                 {groupedFAQs[category].map((faq) => (
-                  <div key={faq.id}>
+                  <div key={faq.question}>
                     <dt className="text-base/7 font-semibold">
                       {faq.question}
                     </dt>
                     <dd className="mt-2 text-base/7 text-secondary-onyx/70">
-                      {faq.answer}
+                        <div
+                            dangerouslySetInnerHTML={{ __html: faq.answer }}
+                        ></div>
+                      {/* {faq.answer} */}
                     </dd>
                   </div>
                 ))}

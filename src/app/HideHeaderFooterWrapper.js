@@ -1,8 +1,8 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "../app/components/Navbar";
+import Footer from "../app/components/Footer";
 
 export default function HideHeaderFooterWrapper({ children }) {
   const pathname = usePathname();

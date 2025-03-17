@@ -1,4 +1,4 @@
-import ContactProgramAdvisor from "@/app/components/ContactProgramAdvisor";
+import ContactProgramAdvisor from "../components/ContactProgramAdvisor";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -93,7 +93,26 @@ export default function HomepageEvents() {
                             {event.time}
                         </span>
                         </div>
-                        <h3 className="mt-2 text-base sm:text-lg font-semibold line-clamp-2 min-h-[3rem]">
+                        <div className="py-2">
+                            <span className="inline-flex items gap-1 font-semibold rounded-full px-2.5 py-1 bg-green-100 text-xs text-green-700">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                strokeWidth={1.5}
+                                stroke="currentColor"
+                                className="size-4"
+                            >
+                                <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M9 12.75L11.25 15L15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
+                                />
+                            </svg>
+                            Workshop
+                            </span>
+                        </div>
+                        <h3 className=" text-base sm:text-lg font-semibold line-clamp-2 min-h-[3rem]">
                         {event.title}
                         </h3>
                         <p className="text-sm text-secondary-onyx/70 mt-1">
@@ -120,21 +139,31 @@ export default function HomepageEvents() {
                             {event.location}
                         </span>
                         </p>
-                        <a
+
+                        <div className="flex items-center">
+                        <Link 
                         href="/events-at-hoetzin"
-                        className="block mt-4 text-center w-full px-4 py-2 text-sm font-semibold text-white border-secondary-orangeCTA bg-secondary-orangeCTA hover:bg-secondary-orangeCTA/85 rounded-full shadow transition"
+                        className="max-sm:hidden mx-auto text-right w-full text-base/6 font-semibold text-secondary-orangeCTA"
+                        >
+                        Register Now <span aria-hidden="true">→</span>
+                        </Link>
+
+                        <Link 
+                        href="/events-at-hoetzin"
+                        className="sm:hidden mx-auto text-center w-full rounded-full bg-secondary-orangeCTA mt-3 mb-2 py-2 text-sm font-semibold text-white shadow hover:bg-secondary-orangeCTA/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-orangeCTA/60"
                         >
                         Register Now
-                        </a>
+                        </Link>
+                        </div>
                     </div>
                     </div>
                 ))}
                 </div>
             </div>
-            <div className="flex items-center justify-center py-5">
+            <div className="flex items-center justify-center py-10">
                 <Link
                 // href={`${process.env.NEXT_PUBLIC_BASE_PATH}/courses`}
-                href="/courses"
+                href="/events-at-hoetzin"
                 className="rounded-3xl bg-secondary-orangeCTA px-4 py-3 text-sm font-semibold text-white shadow-xs hover:bg-secondary-orangeCTA/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-orangeCTA/85"
                 >
                     View more events

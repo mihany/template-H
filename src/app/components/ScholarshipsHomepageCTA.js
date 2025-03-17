@@ -3,10 +3,10 @@ export default function ScholarshipsHomepageCTA() {
       // w-[calc(100%-1rem)]
       <div className="bg-secondary-robinEggBlue/10">
         <div className="mx-auto max-w-7xl px-6 py-20 sm:py-28 lg:flex lg:items-center lg:justify-between lg:px-8
-          bg-[length:21rem_21rem] sm:bg-[length:18rem_18rem]
-          bg-[calc(100%+9rem)_calc(100%-2rem)] sm:bg-[calc(100%+8rem)_calc(100%-5rem)] md:bg-[-5rem_calc(100%-3.5rem)] 
+          bg-[length:12rem_12rem] sm:bg-[length:11rem_11rem]
+          bg-[calc(100%+1rem)_calc(100%-6rem)] sm:bg-[-2.6rem_calc(100%-9rem)] md:bg-[-0.5rem_calc(100%-8rem)] 
           bg-no-repeat 
-          bg-[url('/images/handholdsbook.jpeg')]
+          bg-[url('/images/handholdsbook.svg')]
         ">
           <h2 className="sm:ml-24 max-w-2xl text-4xl font-semibold tracking-tight text-secondary-onyx sm:text-4xl">
             More than 5 scholarships are availble <br />

@@ -18,8 +18,17 @@ export const metadata = {
     },
   };
 
-import Newsletter from "@/app/components/Newsletter"
-import ModalExample from "@/app/components/ModalExample";
+import Newsletter from "../components/Newsletter"
+
+import { IconCloud } from "../components/IconCloud";
+
+import "animate.css";
+
+import {
+  AnimatedSpan,
+  Terminal,
+  TypingAnimation,
+} from "../components/AdmissionTerminal";
 
 import {
   CalendarIcon,
@@ -173,7 +182,44 @@ const items = [
   },
 ]
 
+const slugs = [
+  "typescript",
+  "javascript",
+  "dart",
+  "java",
+  "react",
+  "flutter",
+  "android",
+  "html5",
+  "css3",
+  "nodedotjs",
+  "express",
+  "nextdotjs",
+  "prisma",
+  "amazonaws",
+  "postgresql",
+  "firebase",
+  "nginx",
+  "vercel",
+  "testinglibrary",
+  "jest",
+  "cypress",
+  "docker",
+  "git",
+  "jira",
+  "github",
+  "gitlab",
+  "visualstudiocode",
+  "androidstudio",
+  "sonarqube",
+  "figma",
+];
+
 export default function EventsAtHoetzin() {
+  const images = slugs.map(
+    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
+  );
+
     return (
       <>
         {/* <div className="bg-white">
@@ -198,11 +244,20 @@ export default function EventsAtHoetzin() {
         {/* Events calendar starts here */}
         <div className="mx-auto max-w-7xl px-6 lg:px-8"> 
           {/* py-24 sm:py-32 */}
-      <h1 className="text-3xl font-semibold text-gray-900">Explore events @Hoetzin</h1>
-      <h2 className="text-base font-semibold text-gray-900">Upcoming workshops</h2>
+          {/* <Logo fillColor="black" /> */}
+          <div className="w-32 h-auto text-indigo-600">
+            <img src="/logo-black.svg" alt="Company Logo" className="w-32 h-auto" />
+          </div>
+      <h1 className="text-3xl mt-5 font-semibold text-secondary-onyx animate__animated animate__fadeIn animate__delay-0.75s">Explore events @Hoetzin</h1>
+      <h2 className="text-base font-semibold text-secondary-onyx">Upcoming workshops</h2>
+      
+      <div className="relative flex size-full items-center justify-center overflow-hidden">
+            <IconCloud images={images} />
+      </div>
+
       <div className="lg:grid lg:grid-cols-12 lg:gap-x-16">
         <div className="mt-10 text-center lg:col-start-8 lg:col-end-13 lg:row-start-1 lg:mt-9 xl:col-start-9">
-          <div className="flex items-center text-gray-900">
+          <div className="flex items-center text-secondary-onyx">
             <button
               type="button"
               className="-m-1.5 flex flex-none items-center justify-center p-1.5 text-gray-400 hover:text-gray-500"
@@ -309,7 +364,7 @@ export default function EventsAtHoetzin() {
       </div>
 
       </div>
-      <ModalExample />
+      {/* <ModalExample /> */}
       <section className="bg-secondary-darkCyan">
         <div className="mx-auto max-w-7xl py-8 px-6 lg:px-8">
         <h1 className="text-3xl font-semibold text-secondary-whiteSmoke">What they said about workshops?</h1>
@@ -341,7 +396,7 @@ export default function EventsAtHoetzin() {
             </div>
 
             <div className="relative h-52 sm:h-44 mb-40 sm:mb-44 bg-secondary-green">
-              <Newsletter />
+              <Newsletter firstline="Don't miss an event" secondline="Subscribe now"/>
             </div>
 
         </section> 

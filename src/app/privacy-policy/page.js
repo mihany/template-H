@@ -50,7 +50,7 @@ const sections = [
   {
     heading: "Contacting us",
     content: `
-      If you have any questions about this Policy, please contact us by email at <a href="mailto:support@hoetzin.com" class="text-secondary-lightGreen hover:underline">support@hoetzin.com</a>.
+      If you have any questions about this Policy, please contact us by email at <a href="mailto:support@hoetzin.com" class="text-secondary-darkCyan hover:underline">support@hoetzin.com</a>.
     `,
   },
 ];

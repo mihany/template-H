@@ -1,5 +1,7 @@
 import Image from "next/image";
-import Newsletter from "@/app/components/Newsletter";
+import Newsletter from "../components/Newsletter";
+import Countdown from "../components/Countdown";
+
 
 export const metadata = {
   title: "About Us - Hoetzin",
@@ -66,6 +68,7 @@ export default function AboutUs() {
       <div className="mx-auto max-w-7xl p-6 lg:p-24">
         <div className="mx-auto max-w-2xl lg:max-w-none lg:grid lg:grid-cols-3 lg:gap-8">
           <div className="lg:col-span-2">
+            {/* <Countdown start={30} /> */}
             <p className="text-xl leading-8 text-secondary-onyx/70">
               The story of Hoetzin began in Cairo, Egypt in 2024.
             </p>
@@ -261,7 +264,7 @@ export default function AboutUs() {
         </div> */}
       {/* Newsletter  */}
         <div className="relative h-64 sm:h-56 md:h-72 mb-40 sm:mb-44 bg-secondary-green">
-          <Newsletter />
+          <Newsletter firstline="Ready to accelerate your career?" secondline="Apply now"/>
         </div>
       </section>
       

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { CheckIcon } from "@heroicons/react/20/solid";
 
+
 const tabs = [
   { id: 1, label: "Software architecture", hours: "96H" },
   { id: 2, label: "Database and SQL", hours: "80H" },

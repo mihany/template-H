@@ -5,7 +5,7 @@ export default function BenefitsHomepage() {
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         {/* <h2 className="text-base/7 font-semibold text-secondary-robinEggBlue">Deploy faster</h2> */}
         <h2 className="text-center mt-2  text-4xl font-semibold tracking-tight text-pretty text-secondary-whiteSmoke sm:text-5xl">
-          Everything you need to deploy your app
+          Everything you need to know about our Bootcamp
         </h2>
         <div className="mt-8 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
           <div className="relative lg:col-span-3">
@@ -19,10 +19,10 @@ export default function BenefitsHomepage() {
               <div className="p-8 pt-4">
                 <h2 className="text-xl font-semibold">Break into tech from any background</h2>
                 <p className="mt-2 max-w-lg text-base/6 text-secondary-onyx/70">
-                Learn new tech skills from scratch. We work with skilled industry experts to create learning materials that equip you with the knowledge and in-demand skills needed to land the job you want. So even if you’re a complete beginner, our online study platform's cutting-edge curriculum is built for you.
+                  Learn tech skills from scratch with expert-designed courses that equip you with in-demand knowledge to land your dream job—even as a beginner.
                 </p>
                 <div className="mt-2 flex justify-end gap-x-6">
-                <a href="/scholarships" className="text-sm/6 font-semibold text-secondary-orangeCTA">
+                <a href="/courses/#transformyourlife" className="text-sm/6 font-semibold text-secondary-orangeCTA">
                       Find out more <span aria-hidden="true">→</span>
                 </a>
                 {/* <a
@@ -48,10 +48,10 @@ export default function BenefitsHomepage() {
               <div className="p-8 pt-4">
                 <h2 className="text-xl font-semibold">Get practical experience with our cutting-edge curriculum</h2>
                 <p className="mt-2 max-w-lg text-base/6 text-secondary-onyx/70">
-                A career in technology means staying up to date with the latest tools. Our instructional designers and editors work with skilled industry experts to create learning materials and project briefs that equip you with the knowledge and in-demand skills needed to land the job you want.
+                  Stay ahead in tech with our AI-integrated curriculum, designed by experts to equip you with the latest tools, skills, and knowledge to land your dream job.
                 </p>
                 <div className="mt-2 flex justify-end gap-x-6">
-                <a href="/scholarships" className="text-sm/6 font-semibold text-secondary-orangeCTA">
+                <a href="/courses/#courses" className="text-sm/6 font-semibold text-secondary-orangeCTA">
                       Find out more <span aria-hidden="true">→</span>
                 </a>
                 {/* <a
@@ -77,7 +77,7 @@ export default function BenefitsHomepage() {
               <div className="p-8 pt-4">
                 <h2 className="text-xl font-semibold">Navigate your next steps</h2>
                 <p className="mt-2 max-w-lg text-base/6 text-secondary-onyx/70">
-                Work in partnership with industry experts. Your mentor is a senior in the field helping you meet your long-term career goals, and your tutor is a course expert providing your assignment feedback. In the Job Preparation Course, enjoy 1:1 support from a career specialist. Practice interviewing, revamp your resume, and get job-ready!
+                  Learn from industry experts with mentor guidance, tutor feedback, and 1:1 career support to refine your resume, ace interviews, and land your dream job.
                 </p>
                 <div className="mt-2 flex justify-end gap-x-6">
                 <a href="/scholarships" className="text-sm/6 font-semibold text-secondary-orangeCTA">
@@ -105,10 +105,11 @@ export default function BenefitsHomepage() {
               <div className="p-8 pt-4">
                 <h2 className="text-xl font-semibold">Shape your studies around your life</h2>
                 <p className="mt-2 max-w-lg text-base/6 text-secondary-onyx/70">
-                Swap the commute to class for the flexibility of remote learning. Our career-change platform is built with busy schedules in mind, so you can work to your own timetable—not rigid class calendars. No need to quit your job or put life on hold, since you decide when and where you learn.
+                  Learn online with flexible full-time or part-time schedules—no commute, no rigid calendars, just structured remote learning that fits your life.
+                {/* Swap the commute to class for the flexibility of remote learning. Our career-change platform is built with busy schedules in mind, so you can work to your own timetable—not rigid class calendars. No need to quit your job or put life on hold, since you decide when and where you learn. */}
                 </p>
                 <div className="mt-2 flex justify-end gap-x-6">
-                <a href="/scholarships" className="text-sm/6 font-semibold text-secondary-orangeCTA">
+                <a href="/courses/#hoetzin-schedule" className="text-sm/6 font-semibold text-secondary-orangeCTA">
                       Find out more <span aria-hidden="true">→</span>
                 </a>
                 {/* <a
@@ -133,7 +134,7 @@ export default function BenefitsHomepage() {
               <div className="p-8 pt-4">
                 <h2 className="text-xl font-semibold">Get support anytime</h2>
                 <p className="mt-2 max-w-lg text-base/6 text-secondary-onyx/70">
-                Swap the commute to class for the flexibility of remote learning. Our career-change platform is built with busy schedules in mind, so you can work to your own timetable—not rigid class calendars. No need to quit your job or put life on hold, since you decide when and where you learn.
+                  Get 24/7 support during your Bootcamp and ongoing career guidance after graduation until you land your job—all with structured remote learning.
                 </p>
                 <div className="mt-2 flex justify-end gap-x-6">
                 <a href="/scholarships" className="text-sm/6 font-semibold text-secondary-orangeCTA">

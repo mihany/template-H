@@ -1,5 +1,5 @@
-import EventsSlider from "@/app/components/EventsSlider";
-import ContactProgramAdvisor from "@/app/components/ContactProgramAdvisor";
+import EventsSlider from "../components/EventsSlider";
+import ContactProgramAdvisor from "../components/ContactProgramAdvisor";
 import Link from "next/link";
 import Image from "next/image";
 

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Banner from "@/app/components/Banner";
+import Banner from "../components/Banner";
 
 import { useState } from "react";
 import {
@@ -64,9 +64,9 @@ const products = [
   },
 ];
 const callsToAction = [
-  { name: "Join a Workshop", href: "/events-at-hoetzin", icon: PlayCircleIcon },
-  { name: "Get a call", href: "/contact", icon: PhoneIcon },
-  { name: "View all courses", href: "/courses", icon: RectangleGroupIcon },
+  { name: "Join a Workshop", href: "/events-at-hoetzin", icon: PlayCircleIcon, color: "text-gray-400" },
+  { name: "Get a call", href: "/contact", icon: PhoneIcon, color: "text-gray-400" },
+  { name: "View all courses", href: "/courses", icon: RectangleGroupIcon, color: "text-gray-400" },
 ];
 
 export default function Header() {
@@ -74,7 +74,7 @@ export default function Header() {
 
   return (
     <>
-    <header className="relative isolate z-10 bg-white text-secondary-onyx">
+    <header className="relative isolate z-30 bg-white text-secondary-onyx !outline-none !ring-0">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
@@ -83,13 +83,20 @@ export default function Header() {
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Hoetzin</span>
             <Image
-              className="fill-secondary-lightGreen"
+              src="/images/logo-darkCyan.svg"
+              alt="Hoetzin logo"
+              width={170}
+              height={40}
+              priority={true} // Preloads the image for better performance
+            />
+            {/* <Image
+              className="fill-secondary-robinEggBlue"
               src="/images/logo2.svg"
               alt="Hoetzin logo"
               width={150}
               height={40}
               priority={true} // Preloads the image for better performance
-            />
+            /> */}
             {/* <Image
               // className="dark:invert"
               src="https://images.unsplash.com/photo-1496200186974-4293800e2c20?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -115,13 +122,13 @@ export default function Header() {
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
         </div>
-        <PopoverGroup className="hidden lg:flex lg:gap-x-12">
+        <PopoverGroup className="hidden lg:flex lg:gap-x-12 !outline-none !ring-0">
           <Popover>
-            <PopoverButton className="flex items-center gap-x-1 text-base/6 font-semibold text-gray-900">
+            <PopoverButton className="flex items-center gap-x-1 text-base/6 font-semibold text-secondary-onyx">
               Courses
               <ChevronDownIcon
                 aria-hidden="true"
-                className="size-5 flex-none text-gray-400"
+                className="size-5 flex-none text-secondary-onyx/70"
               />
             </PopoverButton>
 
@@ -138,14 +145,14 @@ export default function Header() {
                     <div className="flex size-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                       <item.icon
                         aria-hidden="true"
-                        className="size-6 text-gray-600 group-hover:text-indigo-600"
+                        className="size-6 text-secondary-onyx/60 group-hover:text-secondary-darkCyan"
                       />
                     </div>
                     <a
                       href={item.href}
-                      className="mt-6 block font-semibold text-gray-900"
+                      className="mt-6 block font-semibold text-secondary-onyx"
                     >
-                      <span className="inline-flex items-center gap-1 font-semibold rounded-full text-xs px-2.5 py-1 text-orange-400 bg-orange-100">
+                      <span className="inline-flex items-center gap-1 font-semibold rounded-full text-xs px-2.5 py-1 text-orange-400 bg-orange-50">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                       </svg>
@@ -155,7 +162,7 @@ export default function Header() {
                       {item.name}
                       <span className="absolute inset-0" />
                     </a>
-                    <p className="mt-1 text-gray-600">{item.description}</p>
+                    <p className="mt-1 text-secondary-onyx/70">{item.description}</p>
                   </div>
                 ))}
               </div>
@@ -166,7 +173,7 @@ export default function Header() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
+                        className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-secondary-onyx hover:bg-gray-100"
                       >
                         <item.icon
                           aria-hidden="true"
@@ -192,18 +199,18 @@ export default function Header() {
             </PopoverPanel>
           </Popover>
 
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <a href="#" className="text-sm/6 font-semibold text-secondary-onyx">
             Features
           </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <a href="#" className="text-sm/6 font-semibold text-secondary-onyx">
             Marketplace
           </a>
-          <a href="/blog" className="text-sm/6 font-semibold text-gray-900">
+          <a href="/blog" className="text-sm/6 font-semibold text-secondary-onyx">
             Blog
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <a href="#" className="text-sm/6 font-semibold text-secondary-onyx">
             Log in <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
@@ -219,7 +226,7 @@ export default function Header() {
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Hoetzin</span>
               <Image
-                className="fill-secondary-lightGreen"
+                className="fill-secondary-robinEggBlue"
                 src="/images/hoetzin-logo1.png"
                 alt="Hoetzin logo"
                 width={150}
@@ -241,45 +248,46 @@ export default function Header() {
               <div className="space-y-2 py-6">
                 <Disclosure as="div" className="-mx-3">
                   <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                    Product
+                    Courses
                     <ChevronDownIcon
                       aria-hidden="true"
                       className="size-5 flex-none group-data-[open]:rotate-180"
                     />
                   </DisclosureButton>
-                  <DisclosurePanel className="mt-2 space-y-2">
+                  <DisclosurePanel className="mt-2 space-y-1">
                     {[...products, ...callsToAction].map((item) => (
                       <DisclosureButton
                         key={item.name}
                         as="a"
                         href={item.href}
-                        className="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
+                        className="block rounded-lg py-2 pl-4 pr-3 text-sm/7 font-semibold text-secondary-onyx hover:bg-gray-50"
                       >
-                        {item.name}<span className="inline-flex items-center gap-1 font-semibold rounded-full text-xs px-2.5 py-1 text-orange-400 bg-orange-100">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                      </svg>
-                        Coming soon...
-                      </span>
+                        {item.name}
+                        <span className="inline-flex items-center gap-1 font-semibold rounded-full text-xs px-2.5 py-1 text-orange-400 bg-orange-50">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                          Coming soon...
+                        </span>
                       </DisclosureButton>
                     ))}
                   </DisclosurePanel>
                 </Disclosure>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-secondary-onyx hover:bg-gray-50"
                 >
                   Features
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-secondary-onyx hover:bg-gray-50"
                 >
                   Marketplace
                 </a>
                 <a
                   href="/blog"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-secondary-onyx hover:bg-gray-50"
                 >
                   Blog
                 </a>
@@ -287,7 +295,7 @@ export default function Header() {
               <div className="py-6">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-secondary-onyx hover:bg-gray-50"
                 >
                   Log in
                 </a>
@@ -297,7 +305,8 @@ export default function Header() {
         </DialogPanel>
       </Dialog>
     </header>
-                    <Banner />
+                    
+      <Banner />
     </>
   );
 }

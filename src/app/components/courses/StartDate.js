@@ -148,23 +148,43 @@ export default function StartDate() {
         </div> */}
 
         <div className="container px-6 m-auto max-w-7xl">
-            <div className="flex flex-wrap gap-6 items-center">
-                {/* Left Section */}
-                <div className="flex-1">
+            
+            <div className="py-2 max-w-6xl m-auto grid grid-cols-8 gap-1 md:gap-6 md:grid-cols-8 lg:grid-cols-12">
+                <div className="inline-flex items-center col-span-6 md:grid-cols-6 lg:col-span-8">
                     <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-white">
                         Choose the learning schedule that suits you
                     </h2>
                 </div>
-
-                {/* Right Section */}
-                <div className="flex flex-col-reverse gap-y-4 text-center">
-                    <dt className="text-base/7 text-white">days a week</dt>
-                    {/* <dd className="text-5xl font-semibold tracking-tight bg-gradient-to-r from-secondary-lightGreen via-secondary-aquaMarine to-secondary-lightGreen inline-block text-transparent bg-clip-text"> */}
-                    <dd className="text-5xl font-semibold text-secondary-whiteSmoke tracking-tight inline-block">
-                        {selectedCohort.daysWeek}
-                    </dd>
+                <div className="col-span-2 md:grid-cols-2 lg:col-span-4 flex justify-center items-center">
+                    <div className="inline-flex flex-col-reverse flex-wrap-reverse justify-center items-center gap-2">
+                        <dt className="text-sm sm:text-base text-white">days a week</dt>
+                        {/* <dd className="text-5xl font-semibold tracking-tight bg-gradient-to-r from-secondary-lightGreen via-secondary-aquaMarine to-secondary-lightGreen inline-block text-transparent bg-clip-text"> */}
+                        <dd className="text-5xl font-semibold text-secondary-whiteSmoke tracking-tight inline-block">
+                            {selectedCohort.daysWeek}
+                        </dd>
+                    </div>
                 </div>
             </div>
+            
+
+            {/* Left Section */}
+            {/* <div className="flex flex-wrap gap-6 items-center"> */}
+                
+                {/* <div className="flex-1">
+                    <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-white">
+                        Choose the learning schedule that suits you
+                    </h2>
+                </div> */}
+
+                {/* Right Section */}
+                {/* <div className="flex flex-col-reverse gap-y-4 text-center"> */}
+                    {/* <dt className="text-base/7 text-white">days a week</dt> */}
+                    {/* <dd className="text-5xl font-semibold tracking-tight bg-gradient-to-r from-secondary-lightGreen via-secondary-aquaMarine to-secondary-lightGreen inline-block text-transparent bg-clip-text"> */}
+                    {/* <dd className="text-5xl font-semibold text-secondary-whiteSmoke tracking-tight inline-block">
+                        {selectedCohort.daysWeek}
+                    </dd> */}
+                {/* </div> */}
+            {/* </div> */}
                 
             <p className="mt-4 text-white">
                 Whether you prefer an intensive full-time option or a flexible part-time format, our courses are tailored to you.

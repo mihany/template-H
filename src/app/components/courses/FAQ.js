@@ -1,6 +1,6 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
-import Newsletter from "@/app/components/Newsletter";
+import Newsletter from "../../components/Newsletter";
 
 export default function FAQ(props){
     return(
@@ -45,7 +45,7 @@ export default function FAQ(props){
         </div>
 
         <div className="relative h-64 sm:h-56 md:h-72 mb-40 sm:mb-44 bg-secondary-darkCyan">
-            <Newsletter />
+            <Newsletter firstline="Ready to accelerate your career?" secondline="Apply now"/>
         </div>
         </>
     );
